@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        fieldset{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <label>名前</label>
+        <input type="text" name="name" id="name">
+        <fieldset>
+            <label>生年月日</label>
+            <input type="number" name="year" id="year" size="8" maxlength="4">
+            年
+            <input type="number" name="month" id="month" size="4" maxlength="2">
+            月
+            <input type="number" name="day" id="day" size="4" maxlength="2">
+            日
+        </fieldset>
+        <label>パスワード</label>
+        <input type="password" maxlength="30">
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
