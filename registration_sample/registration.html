@@ -16,10 +16,10 @@
     </style>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="http://192.168.56.101/easable-back/app/controller/regist_user.php" method="post">
         <label>名前</label>
         <input type="text" name="name" id="name">
-        <fieldset>
+        <!-- <fieldset>
             <label>生年月日</label>
             <input type="number" name="year" id="year" size="8" maxlength="4">
             年
@@ -27,10 +27,10 @@
             月
             <input type="number" name="day" id="day" size="4" maxlength="2">
             日
-        </fieldset>
+        </fieldset> -->
         <label>パスワード</label>
-        <input type="password" maxlength="30">
-        <input type="submit" value="送信">
+        <input type="password" name="password" id="password" maxlength="30">
+        <input type="submit" name="submit" value="送信">
     </form>
 </body>
 </html>
