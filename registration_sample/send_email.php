@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="http://192.168.56.101/easable-back/app/controller/signup_send_email.php" method="post">
+    <form action="http://153.127.26.73/easable-back/app/controller/signup_send_email.php" method="post">
         <label>メールアドレスを入力してください</label><br>
         <input type="email" name="email" id="email">
         <input type="submit" name="submit" value="送信">

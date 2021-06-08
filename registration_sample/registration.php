@@ -32,7 +32,7 @@ if (empty($_GET['urltoken'])) {
     <?php
     if ($result === 'OK') {
     ?>
-        <form action="http://192.168.56.101/easable-back/app/controller/regist_user.php" method="post">
+        <form action="http://153.127.26.73/easable-back/app/controller/regist_user.php" method="post">
             <label>名前</label>
             <input type="text" name="name" id="name">
             <!-- <fieldset>
