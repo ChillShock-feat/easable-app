@@ -4,7 +4,7 @@ if (empty($_GET['urltoken'])) {
 } else {
     //TODO:SQLインジェクション攻撃対策をする
     //code
-    $json = file_get_contents("http://192.168.56.101/easable-back/app/controller/signup.php?urltoken={$_GET['urltoken']}");
+    $json = file_get_contents("http://153.127.26.73/easable-back/app/controller/signup.php?urltoken={$_GET['urltoken']}");
     $result = json_decode($json, true)['result'];
 }
 ?>
