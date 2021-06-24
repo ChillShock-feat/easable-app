@@ -381,17 +381,13 @@ body {
   font-family: sans-serif;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-}
-
 .nav {
   width: 20vw;
   height: 100vh;
   background-color: #262626;
   padding: 10rem 2.5rem 0;
   color: #fff;
+  overflow-y: scroll;
 }
 
 .nav__title {
@@ -421,6 +417,7 @@ body {
   height: 55px;
   border: solid 1px #ffffff1A;
   cursor: pointer;
+  margin: 8px 0;
   padding: 15px 10px;
   display: flex;
   align-items: center;
@@ -437,8 +434,26 @@ body {
   transform: rotate(-90deg);
 }
 
+.nav__project__openlist {
+  border: solid 1px #fff;
+}
+
+.nav__project__openlist p {
+  color: #fff;
+}
+
+.nav__project__toggleimg {
+  transition: .3s;
+  transform: rotate(0deg);
+}
+
+.nav__project__toggleimg path {
+  fill: #fff;
+}
+
 .nav__project__serverlist {
   width: 100%;
+  display: none;
 }
 
 .nav__project__serverlist__server, .nav__project__serverlist__newserver {
@@ -446,6 +461,16 @@ body {
   background-color: #ffffff1A;
   margin: 8px 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav__project__serverlist__server span, .nav__project__serverlist__newserver span {
+  width: 6px;
+  height: 6px;
+  background-color: #8BFF6F;
+  border-radius: 100%;
+  margin-left: 15px;
 }
 
 .nav__project__serverlist__server p, .nav__project__serverlist__newserver p {
@@ -456,10 +481,20 @@ body {
   font-weight: 600;
 }
 
+.nav__project__serverlist__newserver p {
+  padding-left: 10px;
+}
+
+.nav__project__openserver {
+  display: block;
+}
+
 .nav__newproject {
-  line-height: 42px;
+  height: 60px;
   background-color: #ffffff1A;
-  margin: 8px 0;
+  margin: 250px 0 30px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -467,6 +502,18 @@ body {
   width: 70%;
   margin: 0 auto;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.database {
+  width: 80vw;
+  height: 100vh;
 }

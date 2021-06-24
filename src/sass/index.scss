@@ -1,1 +1,10 @@
 @import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.database{
+    width: 80vw;
+    height: 100vh;
+}

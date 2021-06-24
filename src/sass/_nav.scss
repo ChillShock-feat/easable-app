@@ -1,15 +1,11 @@
 @import '_var';
-
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-}
 .nav{
     width: 20vw;
     height: 100vh;
     background-color: $navBgColor;
     padding: 10rem 2.5rem 0;
     color: #fff;
+    overflow-y: scroll;
     &__title{
         padding-bottom: 4rem;
         display: flex;
@@ -32,6 +28,7 @@
             height: 55px;
             border: solid 1px $navButton;
             cursor: pointer;
+            margin: 8px 0;
             padding: 15px 10px;
             display: flex;
             align-items: center;
@@ -45,13 +42,36 @@
                 transform: rotate(-90deg);
             }
         }
+        &__openlist{
+            border: solid 1px #fff;
+            p{
+                color: #fff;
+            }
+        }
+        &__toggleimg{
+            transition: .3s;
+            transform: rotate(0deg);
+            path{
+                fill: #fff
+            }
+        }
         &__serverlist{
             width: 100%;
+            display: none;
             &__server, &__newserver{
                 line-height: 42px;
                 background-color: $navButton;
                 margin: 8px 0;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                span{
+                    width: 6px;
+                    height: 6px;
+                    background-color: #8BFF6F;
+                    border-radius: 100%;
+                    margin-left: 15px;
+                }
                 p{
                     width: 70%;
                     margin: 0 auto;
@@ -60,19 +80,30 @@
                     font-weight: $navFontWeight;
                 }
             }
+            &__newserver{
+                p{
+                    padding-left: 10px;
+                }
+            }
+        }
+        &__openserver{
+            display: block;
         }
     }
     &__newproject{
-        line-height: 42px;
+        height: 60px;
         background-color: $navButton;
-        margin: 8px 0;
+        margin: 250px 0 30px;
+        display: flex;
+        align-items: center;
         cursor: pointer;
         p{
             width: 70%;
             margin: 0 auto;
             color: #fff;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: $navFontWeight;
+            text-align: center;
         }
     }
 }
