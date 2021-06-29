@@ -94,31 +94,36 @@
             </section>
         </div>
         <div class="database">
-            <section class="database__nav">
-                <div class="database__nav__link">データベース</div>
-                <div class="database__nav__link">ファイルアップロード</div>
-                <div class="database__nav__link">サーバー詳細</div>
-            </section> 
+            <section class="database__navarea">
+                <section class="database__navarea__nav">
+                    <div class="database__navarea__nav__link">データベース</div>
+                    <div class="database__navarea__nav__link">ファイルアップロード</div>
+                    <div class="database__navarea__nav__link">サーバー詳細</div>
+                </section> 
+                <section class="database__navarea__subnav">
+                    <div class="database__navarea__subnav__link">設計</div>
+                    <div class="database__navarea__subnav__link">使い方</div>
+                </section>
+            </section>
             <div class="database__border-x"></div>
             <section class="database__content">
                 <h1>データベースA</h1>
-                <p>サーバー1</p>
+                <p class="database__content__servername">サーバー1</p>
                 <div class="database__content__table">
                     <div class="database__content__table__btn">
                         <div class="database__content__table__btn__logo"></div>
-                        <p>テーブルリスト</p>
+                        <p class="database__content__table__btn__name">テーブルリスト</p>
                     </div>
                     <div class="database__content__table__btn">
                         <div class="database__content__table__btn__logo"></div>
-                        <p>テーブル追加</p>
+                        <p class="database__content__table__btn__name">テーブル追加</p>
                     </div>
                     <div class="database__content__table__btn">
                         <div class="database__content__table__btn__logo"></div>
-                        <p>データベース編集</p>
+                        <p class="database__content__table__btn__name">データベース編集</p>
                     </div>
                 </div>
             </section>
-            <div class="database__border-y"></div>
         </div>
     </div>
 <script src="js/index.js"></script>

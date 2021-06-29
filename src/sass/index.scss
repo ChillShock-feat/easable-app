@@ -7,4 +7,83 @@
 .database{
     width: 80vw;
     height: 100vh;
+    padding: 70px 40px 0 40px;
+    margin-left: 20%;
+    &__navarea{
+        display: flex;
+        justify-content: space-between;
+        &__nav{
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            &__link{
+                color: #26262666;
+                font-size: 1.6rem;
+                font-weight: $FontWeight;
+                cursor: pointer;
+                padding-top: 10px;
+                margin-bottom: 15px;
+                border-bottom: solid 3px #262626;
+            }
+            &__active{
+                color: $contentFontColor;
+                padding-top: 10px;
+                border-bottom: solid 3px #262626;
+            }
+        }
+        &__subnav{
+            display: flex;
+            &__link{
+                color: #2F3136;
+                font-size: 1.2rem;
+                font-weight: $FontWeight;
+                margin: 0 10px;
+                padding-top: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__border-x{
+        border: solid 4px #2626260A;
+    }
+    &__content{
+        width: 30vw;
+        border-right: solid 4px #2626260A;
+        h1{
+            color: $contentFontColor;
+            font-size: 2.4rem;
+            font-weight: $FontWeight;
+            margin-top: 40px;
+        }
+        &__servername{
+            color: #626262;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            margin-top: 10px;
+        }
+        &__table{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 80px;
+            &__btn{
+                width: 50%;
+                text-align: center;
+                cursor: pointer;
+                margin-bottom: 60px;
+                &__logo{
+                    width: 164px;
+                    height: 164px;
+                    background-color: #C4C4C4;
+                    border-radius: 30px;
+                    margin: 0 auto;
+                }
+                &__name{
+                    color: $contentFontColor;
+                    font-size: 1.6rem;
+                    font-weight: $FontWeight;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }
