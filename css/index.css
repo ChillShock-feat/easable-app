@@ -539,7 +539,7 @@ body {
   cursor: pointer;
   padding-top: 10px;
   margin-bottom: 15px;
-  border-bottom: solid 3px #262626;
+  border-bottom: solid 3px #26262600;
 }
 
 .database__navarea__nav__active {
@@ -567,6 +567,7 @@ body {
 
 .database__content {
   width: 30vw;
+  display: none;
   border-right: solid 4px #2626260A;
 }
 
