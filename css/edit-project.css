@@ -510,105 +510,59 @@ body {
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
   display: flex;
 }
 
-.database {
+.editproject {
   width: 80vw;
-  height: 100vh;
   padding: 70px 40px 0 40px;
   margin-left: 20%;
 }
 
-.database__navarea {
+.editproject__nav {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.database__navarea__nav {
-  width: 30vw;
-  display: flex;
-  justify-content: space-around;
-}
-
-.database__navarea__nav__link {
-  color: #26262666;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding-top: 10px;
-  margin-bottom: 15px;
-  border-bottom: solid 3px #26262600;
-}
-
-.database__navarea__nav__active {
-  color: #262626;
-  padding-top: 10px;
-  border-bottom: solid 3px #262626;
-}
-
-.database__navarea__subnav {
-  display: flex;
-}
-
-.database__navarea__subnav__link {
+.editproject__nav__link {
   color: #2F3136;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
-  margin: 0 10px;
-  padding-top: 2px;
+  margin: 2px 10px 0;
 }
 
-.database__border-x {
+.editproject__border-x {
+  margin: 20px 0 50px;
   border: solid 4px #2626260A;
 }
 
-.database__content {
-  width: 30vw;
-  display: none;
-  border-right: solid 4px #2626260A;
-}
-
-.database__content h1 {
+.editproject h1 {
   color: #262626;
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+.editproject__wrap {
+  display: flex;
   margin-top: 40px;
 }
 
-.database__content__servername {
-  color: #626262;
+.editproject__wrap__list__word {
+  color: #262626;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
-.database__content__table {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-}
-
-.database__content__table__btn {
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  margin-bottom: 60px;
-}
-
-.database__content__table__btn__logo {
-  width: 164px;
-  height: 164px;
-  background-color: #C4C4C4;
-  border-radius: 30px;
-  margin: 0 auto;
-}
-
-.database__content__table__btn__name {
+.editproject__wrap__list__content {
   color: #262626;
   font-size: 1.6rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.editproject__wrap__list__active {
   font-weight: 600;
-  margin-top: 20px;
 }

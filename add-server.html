@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>easable - home</title>
+    <title>easable - サーバー追加</title>
+    <link rel="stylesheet" href="css/add-project.css">
 </head>
 <body>
     <div class="wrapper">
@@ -93,46 +93,23 @@
                 <p>＋&emsp;新規プロジェクト</p>
             </section>
         </nav>
-        <main class="database">
-            <section class="database__navarea">
-                <section class="database__navarea__nav">
-                    <div class="database__navarea__nav__link change-content">データベース</div>
-                    <div class="database__navarea__nav__link change-content">ファイルアップロード</div>
-                    <div class="database__navarea__nav__link change-content">サーバー詳細</div>
-                </section> 
-                <section class="database__navarea__subnav">
-                    <a href="#" class="database__navarea__subnav__link">設計</a>
-                    <a href="#" class="database__navarea__subnav__link">使い方</a>
-                </section>
-            </section>
-            <div class="database__border-x"></div>
-            <section class="database__content show-content">
-                <h1>データベースA</h1>
-                <p class="database__content__servername">サーバー1</p>
-                <div class="database__content__table">
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">テーブルリスト</p>
+        <main class="newproject">
+            <div class="newproject__box">
+                <div class="newproject__box__circle"></div>
+                <h1>新規サーバーを追加する</h1>
+                <p class="newproject__box__word">テーブル名に使用する名前を登録して下さい</p>
+                <form action="#" method="post" class="newproject__box__projectdata">
+                    <div class="newproject__box__projectdata__name" id="addserver-parent">
+                        <label>サーバー名</label>
+                        <input type="text" name="servername" id="servername-1">
                     </div>
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">テーブル追加</p>
-                    </div>
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">データベース編集</p>
-                    </div>
-                </div>
-            </section>
-            <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
-            </section>
-            <section class="database__content show-content">
-                <h2>サーバー詳細</h2>
-            </section>
+                    <div class="newproject__box__projectdata__addserver" id="addserver">＋ サーバーを追加する</div>
+                    <input type="submit" value="サーバーをつくる" class="newproject__box__projectdata__submit">
+                </form>
+            </div>
         </main>
     </div>
 <script src="js/nav.js"></script>
-<script src="js/index.js"></script>
+<script src="js/add-project.js"></script>
 </body>
 </html>

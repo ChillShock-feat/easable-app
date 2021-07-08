@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easable - プロジェクト編集</title>
+    <link rel="stylesheet" href="css/edit-project.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav__title">
+                <p>プロジェクトリスト</p>
+                <a href="#">編集</a>
+            </div>
+            <section class="nav__project">
+                <div class="nav__project__box nav-toggle">
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                    </svg>    
+                    <p>プロジェクト1</p>
+                </div>
+                <div class="nav__project__serverlist show-list">
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー1</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー2</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー3</p>
+                    </div>
+                    <div class="nav__project__serverlist__newserver">
+                        <p>＋&nbsp;新規作成</p>
+                    </div>
+                </div>
+            </section>
+            <section class="nav__project">
+                <div class="nav__project__box nav-toggle">
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                    </svg>    
+                    <p>プロジェクト2</p>
+                </div>
+                <div class="nav__project__serverlist show-list">
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー1</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー2</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー3</p>
+                    </div>
+                    <div class="nav__project__serverlist__newserver">
+                        <p>＋&nbsp;新規作成</p>
+                    </div>
+                </div>
+            </section>
+            <section class="nav__project">
+                <div class="nav__project__box nav-toggle">
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                    </svg>    
+                    <p>プロジェクト3</p>
+                </div>
+                <div class="nav__project__serverlist show-list">
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー1</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー2</p>
+                    </div>
+                    <div class="nav__project__serverlist__server">
+                        <span></span>
+                        <p>サーバー3</p>
+                    </div>
+                    <div class="nav__project__serverlist__newserver">
+                        <p>＋&nbsp;新規作成</p>
+                    </div>
+                </div>
+            </section>
+            <section class="nav__newproject">
+                <p>＋&emsp;新規プロジェクト</p>
+            </section>
+        </nav>
+        <main class="editproject">
+           <div class="editproject__nav">
+               <a href="#" class="editproject__nav__link">設計</a>
+               <a href="#" class="editproject__nav__link">使い方</a>
+           </div> 
+           <div class="editproject__border-x"></div>
+           <h1>編集</h1>
+           <div class="editproject__wrap">
+                <section class="editproject__wrap__list">
+                    <p class="editproject__wrap__list__word">プロジェクトリスト</p>
+                    <div class="editproject__wrap__list__content">プロジェクト1</div>
+                    <div class="editproject__wrap__list__content">プロジェクト2</div>
+                    <div class="editproject__wrap__list__content">プロジェクト3</div>
+                    <div class="editproject__wrap__list__content">プロジェクト4</div>
+                </section>
+                <section class="editproject__wrap__editarea">
+                    <p class="editproject__wrap__editarea__projectname">プロジェクト1</p>
+                    <div class="editproject__wrap__editarea__altbtn"></div>
+                    <div class="editproject__wrap__editarea__server">
+                        <input type="checkbox" name="selectserver" id="selectserver">
+                        <div class="editproject__wrap__editarea__server__box">
+                            <p class="editproject__wrap__editarea__server__box__name">サーバー1</p>
+                            <p class="editproject__wrap__editarea__server__box__date">2021/05/31</p>
+                        </div>
+                        <div class="editproject__wrap__editarea__server__editbtn">データベース編集</div>
+                        <div class="editproject__wrap__editarea__server__altbtn">
+                            <img src="img/altbtn.svg" alt="その他ボタン">
+                        </div>
+                    </div>
+                    <div class="editproject__wrap__editarea__server">
+                        <input type="checkbox" name="selectserver" id="selectserver">
+                        <div class="editproject__wrap__editarea__server__box">
+                            <p class="editproject__wrap__editarea__server__box__name">サーバー1</p>
+                            <p class="editproject__wrap__editarea__server__box__date">2021/05/31</p>
+                        </div>
+                        <div class="editproject__wrap__editarea__server__editbtn">データベース編集</div>
+                        <div class="editproject__wrap__editarea__server__altbtn">
+                            <img src="img/altbtn.svg" alt="その他ボタン">
+                        </div>
+                    </div>
+                    <div class="editproject__wrap__editarea__server">
+                        <input type="checkbox" name="selectserver" id="selectserver">
+                        <div class="editproject__wrap__editarea__server__box">
+                            <p class="editproject__wrap__editarea__server__box__name">サーバー1</p>
+                            <p class="editproject__wrap__editarea__server__box__date">2021/05/31</p>
+                        </div>
+                        <div class="editproject__wrap__editarea__server__editbtn">データベース編集</div>
+                        <div class="editproject__wrap__editarea__server__altbtn">
+                            <img src="img/altbtn.svg" alt="その他ボタン">
+                        </div>
+                    </div>
+                    <div class="editproject__wrap__editarea__server">
+                        <input type="checkbox" name="selectserver" id="selectserver">
+                        <div class="editproject__wrap__editarea__server__box">
+                            <p class="editproject__wrap__editarea__server__box__name">サーバー1</p>
+                            <p class="editproject__wrap__editarea__server__box__date">2021/05/31</p>
+                        </div>
+                        <div class="editproject__wrap__editarea__server__editbtn">データベース編集</div>
+                        <div class="editproject__wrap__editarea__server__altbtn">
+                            <img src="img/altbtn.svg" alt="その他ボタン">
+                        </div>
+                    </div>
+                    <div class="editproject__wrap__editarea__server">
+                        <input type="checkbox" name="selectserver" id="selectserver">
+                        <div class="editproject__wrap__editarea__server__box">
+                            <p class="editproject__wrap__editarea__server__box__name">サーバー1</p>
+                            <p class="editproject__wrap__editarea__server__box__date">2021/05/31</p>
+                        </div>
+                        <div class="editproject__wrap__editarea__server__editbtn">データベース編集</div>
+                        <div class="editproject__wrap__editarea__server__altbtn">
+                            <img src="img/altbtn.svg" alt="その他ボタン">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+<script src="js/nav.js"></script>
+</body>
+</html>

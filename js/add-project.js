@@ -2,7 +2,7 @@
 {
     window.onload = () =>{
         let addBtn = document.getElementById('addserver');
-        let i = 1;
+        let i = 2;
         let parent = document.getElementById('addserver-parent');
 
         addBtn.onclick = () =>{
@@ -14,6 +14,7 @@
             newServerData.id = 'servername-' + i;
             parent.appendChild(serverLabel);
             parent.appendChild(newServerData);
+            i++;
         }
     }
 }

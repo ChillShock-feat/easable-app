@@ -1,0 +1,52 @@
+@import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    display: flex;
+}
+.editproject{
+    width: 80vw;
+    padding: 70px 40px 0 40px;
+    margin-left: 20%;
+    &__nav{
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        &__link{
+            color: #2F3136;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            text-decoration: none;
+            margin: 2px 10px 0;
+        }
+    }
+    &__border-x{
+        margin: 20px 0 50px;
+        border: solid 4px #2626260A;
+    }
+    h1{
+        color: $mainTextColor;
+        font-size: 2.4rem;
+        font-weight: $FontWeight;
+    }
+    &__wrap{
+        display: flex;
+        margin-top: 40px;
+        &__list{
+            &__word{
+                color: $mainTextColor;
+                font-size: 1.2rem;
+                font-weight: $FontWeight;
+                margin-bottom: 35px;
+            }
+            &__content{
+                color: $mainTextColor;
+                font-size: 1.6rem;
+                font-weight: 300;
+                cursor: pointer;
+            }
+            &__active{
+                font-weight: $FontWeight;
+            }
+        }
+    }
+}
