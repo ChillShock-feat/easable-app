@@ -549,6 +549,10 @@ body {
   margin-top: 40px;
 }
 
+.editproject__wrap__list {
+  width: 20%;
+}
+
 .editproject__wrap__list__word {
   color: #262626;
   font-size: 1.2rem;
@@ -560,9 +564,111 @@ body {
   color: #262626;
   font-size: 1.6rem;
   font-weight: 300;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
 .editproject__wrap__list__active {
   font-weight: 600;
+}
+
+.editproject__wrap__editarea {
+  width: 60%;
+}
+
+.editproject__wrap__editarea__head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #DDDDDD;
+}
+
+.editproject__wrap__editarea__head__projectname {
+  color: #262626;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.editproject__wrap__editarea__head__altbtn {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.editproject__wrap__editarea__server {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #DDDDDD;
+  position: relative;
+}
+
+.editproject__wrap__editarea__server__left {
+  display: flex;
+  align-items: center;
+}
+
+.editproject__wrap__editarea__server__left__checkbox {
+  transform: scale(1.5);
+  margin: 0px 15px 0px;
+}
+
+.editproject__wrap__editarea__server__left__box__name {
+  color: #626262;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.editproject__wrap__editarea__server__left__box__date {
+  color: #626262;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.editproject__wrap__editarea__server__right {
+  display: flex;
+  margin-right: 20px;
+}
+
+.editproject__wrap__editarea__server__right__editbtn {
+  width: 135px;
+  line-height: 30px;
+  text-align: center;
+  color: #626262;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: solid 2px #DDDDDD;
+  cursor: pointer;
+}
+
+.editproject__wrap__editarea__server__right__altbtn {
+  line-height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.editproject__wrap__editarea__server__right__altcontent {
+  display: none;
+  width: 160px;
+  height: 110px;
+  border: solid 1px #DDDDDD;
+  background-color: #fff;
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  z-index: 10;
+}
+
+.editproject__wrap__editarea__server__right__altcontent__rename, .editproject__wrap__editarea__server__right__altcontent__delete {
+  line-height: 55px;
+  color: #626262;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+.editproject__wrap__editarea__server__right__altcontent__delete {
+  border-top: solid 1px #DDDDDD;
 }
