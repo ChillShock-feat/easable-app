@@ -7,6 +7,7 @@
 /* # =================================================================
    # Global selectors
    # ================================================================= */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap");
 html {
   box-sizing: border-box;
   overflow-y: scroll;
@@ -377,14 +378,13 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Hiragino Kaku Gothic ProN", Meiryo,sans-serif;
-  font-family: sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 .nav {
   width: 20vw;
   height: 100vh;
-  background-color: #262626;
+  background-color: #7ED22F;
   padding: 10rem 2.5rem 0;
   color: #fff;
   overflow-y: scroll;
@@ -416,7 +416,9 @@ body {
 
 .nav__project__box {
   height: 55px;
-  border: solid 1px #ffffff1A;
+  background-color: #ffffff3D;
+  border: solid 4px #FFFFFF;
+  border-radius: 10px;
   cursor: pointer;
   margin: 8px 0;
   padding: 15px 10px;
@@ -425,7 +427,7 @@ body {
 }
 
 .nav__project__box p {
-  color: #ffffff1A;
+  color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 600;
   padding-left: 10px;
@@ -433,10 +435,6 @@ body {
 
 .nav__project__box__img {
   transform: rotate(-90deg);
-}
-
-.nav__project__openlist {
-  border: solid 1px #fff;
 }
 
 .nav__project__openlist p {
@@ -459,7 +457,7 @@ body {
 
 .nav__project__serverlist__server, .nav__project__serverlist__newserver {
   line-height: 42px;
-  background-color: #ffffff1A;
+  background-color: #ffffff3D;
   margin: 8px 0;
   cursor: pointer;
   display: flex;
@@ -469,7 +467,7 @@ body {
 .nav__project__serverlist__server span, .nav__project__serverlist__newserver span {
   width: 6px;
   height: 6px;
-  background-color: #8BFF6F;
+  background-color: #F9F400;
   border-radius: 100%;
   margin-left: 15px;
 }
@@ -488,24 +486,6 @@ body {
 
 .nav__project__openserver {
   display: block;
-}
-
-.nav__newproject {
-  height: 60px;
-  background-color: #ffffff1A;
-  margin: 250px 0 30px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.nav__newproject p {
-  width: 70%;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
 }
 
 .wrapper {
@@ -658,6 +638,24 @@ body {
   top: -25px;
   right: 10px;
   z-index: 10;
+}
+
+.editproject__wrap__editarea__server__right__altcontent::before, .editproject__wrap__editarea__server__right__altcontent::after {
+  content: "";
+  position: absolute;
+  top: -8%;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.editproject__wrap__editarea__server__right__altcontent::before {
+  border: solid 4px transparent;
+  border-bottom: solid 4px #DDDDDD;
+}
+
+.editproject__wrap__editarea__server__right__altcontent::after {
+  border: solid 6px transparent;
+  border-bottom: solid 6px #fff;
 }
 
 .editproject__wrap__editarea__server__right__altcontent__rename, .editproject__wrap__editarea__server__right__altcontent__delete {

@@ -7,6 +7,7 @@
 /* # =================================================================
    # Global selectors
    # ================================================================= */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap");
 html {
   box-sizing: border-box;
   overflow-y: scroll;
@@ -377,14 +378,13 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Hiragino Kaku Gothic ProN", Meiryo,sans-serif;
-  font-family: sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 .nav {
   width: 20vw;
   height: 100vh;
-  background-color: #262626;
+  background-color: #7ED22F;
   padding: 10rem 2.5rem 0;
   color: #fff;
   overflow-y: scroll;
@@ -416,7 +416,9 @@ body {
 
 .nav__project__box {
   height: 55px;
-  border: solid 1px #ffffff1A;
+  background-color: #ffffff3D;
+  border: solid 4px #FFFFFF;
+  border-radius: 10px;
   cursor: pointer;
   margin: 8px 0;
   padding: 15px 10px;
@@ -425,7 +427,7 @@ body {
 }
 
 .nav__project__box p {
-  color: #ffffff1A;
+  color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 600;
   padding-left: 10px;
@@ -433,10 +435,6 @@ body {
 
 .nav__project__box__img {
   transform: rotate(-90deg);
-}
-
-.nav__project__openlist {
-  border: solid 1px #fff;
 }
 
 .nav__project__openlist p {
@@ -459,7 +457,7 @@ body {
 
 .nav__project__serverlist__server, .nav__project__serverlist__newserver {
   line-height: 42px;
-  background-color: #ffffff1A;
+  background-color: #ffffff3D;
   margin: 8px 0;
   cursor: pointer;
   display: flex;
@@ -469,7 +467,7 @@ body {
 .nav__project__serverlist__server span, .nav__project__serverlist__newserver span {
   width: 6px;
   height: 6px;
-  background-color: #8BFF6F;
+  background-color: #F9F400;
   border-radius: 100%;
   margin-left: 15px;
 }
@@ -488,24 +486,6 @@ body {
 
 .nav__project__openserver {
   display: block;
-}
-
-.nav__newproject {
-  height: 60px;
-  background-color: #ffffff1A;
-  margin: 250px 0 30px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.nav__newproject p {
-  width: 70%;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
 }
 
 .wrapper {
@@ -543,9 +523,9 @@ body {
 }
 
 .database__navarea__nav__active {
-  color: #262626;
+  color: #7ED22F;
   padding-top: 10px;
-  border-bottom: solid 3px #262626;
+  border-bottom: solid 3px #7ED22F;
 }
 
 .database__navarea__subnav {
@@ -553,8 +533,8 @@ body {
 }
 
 .database__navarea__subnav__link {
-  color: #2F3136;
-  font-size: 1.2rem;
+  color: #005662;
+  font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
   margin: 0 10px;
@@ -566,49 +546,74 @@ body {
 }
 
 .database__content {
-  width: 30vw;
   display: none;
-  border-right: solid 4px #2626260A;
 }
 
 .database__content h1 {
-  color: #262626;
+  color: #005662;
   font-size: 2.4rem;
   font-weight: 600;
   margin-top: 40px;
 }
 
 .database__content__servername {
-  color: #626262;
+  color: #7ED22F;
   font-size: 1.2rem;
-  font-weight: 600;
   margin-top: 10px;
 }
 
-.database__content__table {
+.database__content__tablewrap {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
 }
 
-.database__content__table__btn {
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  margin-bottom: 60px;
-}
-
-.database__content__table__btn__logo {
-  width: 164px;
-  height: 164px;
-  background-color: #C4C4C4;
+.database__content__tablewrap__tablelist {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  background: #7ED22F;
+  color: #FFF;
+  border-bottom: solid 10px #71BD29;
+  border-right: solid 10px #71BD29;
   border-radius: 30px;
-  margin: 0 auto;
+  font-size: 1.8rem;
 }
 
-.database__content__table__btn__name {
-  color: #262626;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-top: 20px;
+.database__content__tablewrap__tablelist img {
+  padding-left: 25px;
+}
+
+.database__content__tablewrap__background {
+  width: 230px;
+  height: 230px;
+  background-color: #71BD29;
+  border-radius: 30px;
+}
+
+.database__content__tablewrap__background__tablelist-small {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  background: #fff;
+  color: #005662;
+  border: solid 8px #7ED22F;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+
+.database__content__tablewrap__background__tablelist-small img {
+  padding-left: 15px;
 }

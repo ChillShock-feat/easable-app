@@ -27,7 +27,9 @@
         width: 100%;
         &__box{
             height: 55px;
-            border: solid 1px $navButton;
+            background-color: #ffffff3D;
+            border: solid 4px $navButton;
+            border-radius: 10px;
             cursor: pointer;
             margin: 8px 0;
             padding: 15px 10px;
@@ -44,7 +46,7 @@
             }
         }
         &__openlist{
-            border: solid 1px #fff;
+            // border: solid 1px #fff;
             p{
                 color: #fff;
             }
@@ -61,7 +63,7 @@
             display: none;
             &__server, &__newserver{
                 line-height: 42px;
-                background-color: $navButton;
+                background-color: #ffffff3D;
                 margin: 8px 0;
                 cursor: pointer;
                 display: flex;
@@ -69,7 +71,7 @@
                 span{
                     width: 6px;
                     height: 6px;
-                    background-color: #8BFF6F;
+                    background-color: $serveLive;
                     border-radius: 100%;
                     margin-left: 15px;
                 }
@@ -89,22 +91,6 @@
         }
         &__openserver{
             display: block;
-        }
-    }
-    &__newproject{
-        height: 60px;
-        background-color: $navButton;
-        margin: 250px 0 30px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        p{
-            width: 70%;
-            margin: 0 auto;
-            color: #fff;
-            font-size: 1.4rem;
-            font-weight: $FontWeight;
-            text-align: center;
         }
     }
 }

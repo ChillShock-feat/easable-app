@@ -123,6 +123,21 @@
                         top: -25px;
                         right: 10px;
                         z-index: 10;
+                        &::before, &::after{
+                            content: "";
+                            position: absolute;
+                            top: -8%;
+                            left: 90%;
+                            transform: translateX(-50%);
+                        }
+                        &::before{
+                            border: solid 4px transparent;
+                            border-bottom: solid 4px #DDDDDD;
+                        }
+                        &::after{
+                            border: solid 6px transparent;
+                            border-bottom: solid 6px #fff;
+                        }
                         &__rename{
                             line-height: 55px;
                             color: $projectTextColor;

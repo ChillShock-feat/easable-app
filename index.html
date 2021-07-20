@@ -17,7 +17,7 @@
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
                     <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
                     </svg>    
                     <p>プロジェクト1</p>
                 </div>
@@ -35,14 +35,16 @@
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>＋&nbsp;新規作成</p>
+                        <p>
+                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                            &nbsp;新規サーバー作成</p>
                     </div>
                 </div>
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
                     <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
                     </svg>    
                     <p>プロジェクト2</p>
                 </div>
@@ -60,14 +62,16 @@
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>＋&nbsp;新規作成</p>
+                        <p>
+                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                            &nbsp;新規サーバー作成</p>
                     </div>
                 </div>
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
                     <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff1A"/>
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
                     </svg>    
                     <p>プロジェクト3</p>
                 </div>
@@ -85,12 +89,11 @@
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>＋&nbsp;新規作成</p>
+                        <p>
+                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                            &nbsp;新規サーバー作成</p>
                     </div>
                 </div>
-            </section>
-            <section class="nav__newproject">
-                <p>＋&emsp;新規プロジェクト</p>
             </section>
         </nav>
         <main class="database">
@@ -109,18 +112,22 @@
             <section class="database__content show-content">
                 <h1>データベースA</h1>
                 <p class="database__content__servername">サーバー1</p>
-                <div class="database__content__table">
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">テーブルリスト</p>
+                <div class="database__content__tablewrap">
+                    <a href="#" class="database__content__tablewrap__tablelist">
+                        <img src="img/tablelist-big.svg" alt="テーブルリストアイコン">
+                        <p class="database__content__tablewrap__tablelist__name">テーブルリスト</p>
+                    </a>
+                    <div class="database__content__tablewrap__background">
+                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
+                            <img src="img/tablelist-small.svg" alt="テーブル追加アイコン">
+                            <p class="database__content__tablewrap__background__tablelist-small__name">テーブル追加</p>
+                        </a>
                     </div>
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">テーブル追加</p>
-                    </div>
-                    <div class="database__content__table__btn">
-                        <div class="database__content__table__btn__logo"></div>
-                        <p class="database__content__table__btn__name">データベース編集</p>
+                    <div class="database__content__tablewrap__background">
+                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
+                            <img src="img/tablelist-small.svg" alt="データベース編集アイコン">
+                            <p class="database__content__tablewrap__background__tablelist-small__name">データベース編集</p>
+                        </a>
                     </div>
                 </div>
             </section>
