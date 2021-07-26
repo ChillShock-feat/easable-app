@@ -29,7 +29,7 @@
         <input type="submit" name="create_function" value="作成">
     </form> -->
 
-    <form action="https://back.easable.jp/easable-back/app/controller/login.php" method="post">
+    <form action="https://back.easable.jp/easable-back/app/controller/home_action.php" method="post">
         <label>サーバ作成</label>
         <input type="submit" name="create_server" value="作成">
         <label>機能作成</label>
