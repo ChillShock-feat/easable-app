@@ -4,7 +4,7 @@ if (empty($_GET['urltoken'])) {
 } else {
     //TODO:SQLインジェクション攻撃対策をする
     //code
-    $json = file_get_contents("http://192.168.56.101/easable-back/app/controller/signup.php?urltoken={$_GET['urltoken']}");
+    $json = file_get_contents("https://back.easable.jp/easable-back/app/controller/signup.php?urltoken={$_GET['urltoken']}");
     $result = json_decode($json, true)['result'];
 }
 ?>
@@ -32,7 +32,7 @@ if (empty($_GET['urltoken'])) {
     <?php
     if ($result === 'OK') {
     ?>
-        <form action="http://192.168.56.101/easable-back/app/controller/regist_user.php" method="post">
+        <form action="https://back.easable.jp/easable-back/app/controller/regist_user.php" method="post">
             <label>名前</label>
             <input type="text" name="name" id="name">
             <!-- <fieldset>
