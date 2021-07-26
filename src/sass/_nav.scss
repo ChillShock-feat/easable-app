@@ -68,7 +68,7 @@
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                span{
+                &__active{
                     width: 6px;
                     height: 6px;
                     background-color: $serveLive;
@@ -81,11 +81,6 @@
                     color: #fff;
                     font-size: 1.2rem;
                     font-weight: $FontWeight;
-                }
-            }
-            &__newserver{
-                p{
-                    padding-left: 10px;
                 }
             }
         }

@@ -1,4 +1,4 @@
-@import '_ress', '_var', '_common', '_nav';
+@import '_ress', '_var', '_common';
 .wrapper{
     width: 100vw;
     display: flex;
@@ -6,13 +6,22 @@
 .newproject{
     width: 80vw;
     margin-left: 20%;
+    margin-bottom: 100px;
     &__box{
         width: 600px;
         height: 100%;
         border: solid 2px #dddddd66;
+        border-radius: 12px;
         box-sizing: border-box;
-        box-shadow: 0px 4px 4px 0px #00000010;
+        box-shadow: 0px 16px 16px 0px #00000066;
         margin: 50px auto;
+        position: relative;
+        cursor: pointer;
+        &__cross{
+            position: absolute;
+            top: 35px;
+            right: 37px;
+        }
         &__circle{
             width: 54px;
             height: 54px;
@@ -27,9 +36,10 @@
             text-align: center;
         }
         &__word{
-            color: #4E5661;
+            color: #7ED22F;
             font-size: 1.2rem;
             font-weight: 700;
+            letter-spacing: 5px;
             text-align: center;
         }
         &__projectdata{
@@ -40,7 +50,7 @@
                 flex-direction: column;
                 margin-top: 35px;
                 label{
-                    color: #4E5661;
+                    color: #C4C4C4;
                     font-size: 1.2rem;
                     font-weight: 700;
                     margin-bottom: 5px;
@@ -49,22 +59,24 @@
                     width: 100%;
                     height: 50px;
                     font-size: 2rem;
-                    border: solid 1px #dddddd;
+                    border: solid 2px #C4C4C4;
+                    border-radius: 6px;
                 }
             }
-            &__addserver{
-                width: 35%;
-                color: #dddddd;
-                font-size: 1.2rem;
-                font-weight: 700;
-                margin-top: 15px;
-                cursor: pointer;
-            }
+            // &__addserver{
+            //     width: 35%;
+            //     color: #dddddd;
+            //     font-size: 1.2rem;
+            //     font-weight: 700;
+            //     margin-top: 15px;
+            //     cursor: pointer;
+            // }
             &__submit{
                 width: 100%;
                 height: 65px;
-                background-color: #C4C4C4;
-                border-radius: 6px;
+                background-color: #83DB31;
+                border-radius: 125px;
+                color: #fff;
                 font-size: 1.6rem;
                 font-weight: $FontWeight;
                 margin-top: 40px;

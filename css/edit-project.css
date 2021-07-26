@@ -464,7 +464,7 @@ body {
   align-items: center;
 }
 
-.nav__project__serverlist__server span, .nav__project__serverlist__newserver span {
+.nav__project__serverlist__server__active, .nav__project__serverlist__newserver__active {
   width: 6px;
   height: 6px;
   background-color: #F9F400;
@@ -478,10 +478,6 @@ body {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.nav__project__serverlist__newserver p {
-  padding-left: 10px;
 }
 
 .nav__project__openserver {
@@ -519,7 +515,7 @@ body {
 }
 
 .editproject h1 {
-  color: #262626;
+  color: #005662;
   font-size: 2.4rem;
   font-weight: 600;
 }
@@ -534,14 +530,14 @@ body {
 }
 
 .editproject__wrap__list__word {
-  color: #262626;
+  color: #005662;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 35px;
 }
 
 .editproject__wrap__list__content {
-  color: #262626;
+  color: #005662;
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 20px;
@@ -564,7 +560,7 @@ body {
 }
 
 .editproject__wrap__editarea__head__projectname {
-  color: #262626;
+  color: #005662;
   font-size: 1.2rem;
   font-weight: 600;
   padding-left: 30px;

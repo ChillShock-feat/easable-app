@@ -381,113 +381,6 @@ body {
   font-family: 'M PLUS 1p', sans-serif;
 }
 
-.nav {
-  width: 20vw;
-  height: 100vh;
-  background-color: #7ED22F;
-  padding: 10rem 2.5rem 0;
-  color: #fff;
-  overflow-y: scroll;
-  position: fixed;
-}
-
-.nav__title {
-  padding-bottom: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav__title p {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.nav__title a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.nav__project {
-  width: 100%;
-}
-
-.nav__project__box {
-  height: 55px;
-  background-color: #ffffff3D;
-  border: solid 4px #FFFFFF;
-  border-radius: 10px;
-  cursor: pointer;
-  margin: 8px 0;
-  padding: 15px 10px;
-  display: flex;
-  align-items: center;
-}
-
-.nav__project__box p {
-  color: #FFFFFF;
-  font-size: 1.4rem;
-  font-weight: 600;
-  padding-left: 10px;
-}
-
-.nav__project__box__img {
-  transform: rotate(-90deg);
-}
-
-.nav__project__openlist p {
-  color: #fff;
-}
-
-.nav__project__toggleimg {
-  transition: .3s;
-  transform: rotate(0deg);
-}
-
-.nav__project__toggleimg path {
-  fill: #fff;
-}
-
-.nav__project__serverlist {
-  width: 100%;
-  display: none;
-}
-
-.nav__project__serverlist__server, .nav__project__serverlist__newserver {
-  line-height: 42px;
-  background-color: #ffffff3D;
-  margin: 8px 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.nav__project__serverlist__server span, .nav__project__serverlist__newserver span {
-  width: 6px;
-  height: 6px;
-  background-color: #F9F400;
-  border-radius: 100%;
-  margin-left: 15px;
-}
-
-.nav__project__serverlist__server p, .nav__project__serverlist__newserver p {
-  width: 70%;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.nav__project__serverlist__newserver p {
-  padding-left: 10px;
-}
-
-.nav__project__openserver {
-  display: block;
-}
-
 .wrapper {
   width: 100vw;
   display: flex;
@@ -496,15 +389,25 @@ body {
 .newproject {
   width: 80vw;
   margin-left: 20%;
+  margin-bottom: 100px;
 }
 
 .newproject__box {
   width: 600px;
   height: 100%;
   border: solid 2px #dddddd66;
+  border-radius: 12px;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px 0px #00000010;
+  box-shadow: 0px 16px 16px 0px #00000066;
   margin: 50px auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.newproject__box__cross {
+  position: absolute;
+  top: 35px;
+  right: 37px;
 }
 
 .newproject__box__circle {
@@ -516,16 +419,17 @@ body {
 }
 
 .newproject__box h1 {
-  color: #262626;
+  color: #005662;
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
 }
 
 .newproject__box__word {
-  color: #4E5661;
+  color: #7ED22F;
   font-size: 1.2rem;
   font-weight: 700;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -541,7 +445,7 @@ body {
 }
 
 .newproject__box__projectdata__name label {
-  color: #4E5661;
+  color: #C4C4C4;
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 5px;
@@ -551,23 +455,16 @@ body {
   width: 100%;
   height: 50px;
   font-size: 2rem;
-  border: solid 1px #dddddd;
-}
-
-.newproject__box__projectdata__addserver {
-  width: 35%;
-  color: #dddddd;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 15px;
-  cursor: pointer;
+  border: solid 2px #C4C4C4;
+  border-radius: 6px;
 }
 
 .newproject__box__projectdata__submit {
   width: 100%;
   height: 65px;
-  background-color: #C4C4C4;
-  border-radius: 6px;
+  background-color: #83DB31;
+  border-radius: 125px;
+  color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 40px;

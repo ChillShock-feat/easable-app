@@ -1,0 +1,58 @@
+@import '_ress', '_var', '_common', '_nav';
+.signin{
+    width: 415px;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        color: $mainTextColor;
+        font-size: 3.6rem;
+        font-weight: $FontWeight;
+        text-align: center;
+        letter-spacing: 15px;
+    }
+    &__subtitle{
+        color: #83DB31;
+        font-size: 1.4rem;
+        font-weight: $FontWeight;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    &__form{
+        width: 100%;
+        margin-top: 45px;
+        &__title{
+            color: #C4C4C4;
+            font-size: 1.4rem;
+            font-weight: $FontWeight;
+        }
+        &__textarea{
+            width: 100%;
+            height: 46px;
+            border: solid 2px #C4C4C4;
+            border-radius: 6px;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+        &__forget{
+            display: inline-block;
+            color: #C4C4C4;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        &__submit{
+            width: 100%;
+            line-height: 64px;
+            background-color: #83DB31;
+            border-radius: 125px;
+            color: #fff;
+            font-size: 1.4rem;
+            margin-top: 25px;
+        }
+    }
+}
