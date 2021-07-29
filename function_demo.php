@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <h1>ログイン</h1>
-    <form action="https://back.easable.jp/easable-back/app/controller/login.php" method="post">
-        <label>メールアドレス</label>
-        <input type="text" name="email" id="email">
+    <h1>機能デモ</h1>
+    <h2>名前、パスワードを登録する</h2>
+    <form action="https://back.easable.jp/easable-back/app/controller/.php" method="post">
+        <label>名前</label>
+        <input type="text" name="name" id="name">
         <label>パスワード</label>
-        <input type="password" name="password" id="password" maxlength="30">
-        <input type="submit" name="submit" value="ログイン">
+        <input type="password" name="password" id="password">
     </form>
 </body>
 </html>

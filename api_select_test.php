@@ -3,15 +3,19 @@
     header('Content-Type: text/html; charset=UTF-8');
     //CROS対策
     header('Access-Control-Allow-Origin: *');
+    
+    $dsn = "mysql:host=153.127.26.73;dbname=easable;port=3306;charser=utf8;unix_socket=/tmp/mysql.sock'";
 
     $url = 'https://back.easable.jp/easable-back/app/user/api.php';
     $data = [];
 
-    // $apiに送るsqlデータ。
-    $data['select'] = "SELECT * FROM user";
+    // ユーザごとのデータベース設定を追加  
+    $data['dsn'] = $dsn;
+    $data['db_user'] = 'admin';
+    $data['db_pass'] = 'easablepass';
 
-    
-    // $data['update'] = "UPDATE user set name='ex1' where id = 2";
+    // $dataに送るデータを詰めます。
+    $data['select'] = "SELECT * FROM user";
 
     // 送信データをURLエンコード。
     $data = http_build_query($data, "", "&");
@@ -34,15 +38,4 @@
 
     $data = file_get_contents($url, false, $context);
 
-    // if($data->status == "200") {
-    //     print json_encode($data, JSON_PRETTY_PRINT);    
-    // }
-
-
-    // if(isset($data)){
-    //     echo json_encode($data,JSON_PRETTY_PRINT);
-    // }else{
-    //     echo json_encode(["error"]);
-    // }
-
-    echo $data;
+    echo $data;        
