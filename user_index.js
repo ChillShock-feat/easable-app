@@ -2,7 +2,7 @@ const root = document.getElementById("root");
 const rootDiv = document.createElement("div");
 
 async function main() {
-    const url = `https://www.easable.jp/easable-app/api_select_test.php`;
+    const url = `https://www.easable.jp/easable-app/api_call_post.php`;
     const req = await fetch(url, {
         method: 'GET',
         mode: 'cors',

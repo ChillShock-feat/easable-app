@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APIテスト</title>
-    <script src="user_index.js" defer></script>
+    <title>Document</title>
 </head>
-<body>
-    <div class="root" id="root">
 
-    </div>
+<body>
+    <h1>新しいプロジェクト「<?php echo $project_name; ?>」が作成されました。</h1>
 </body>
 </html>
