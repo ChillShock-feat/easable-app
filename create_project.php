@@ -13,6 +13,7 @@
 
     <form action="https://back.easable.jp/easable-back/app/controller/create_project.php" method="post">
         <label>新規プロジェクト作成</label>
+        <input type="text" name="project_name" placeholder="プロジェクト名">
         <input type="submit" name="submit" value="作成">
     </form>
 </body>
