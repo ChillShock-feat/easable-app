@@ -47,7 +47,6 @@
         border: solid 4px #2626260A;
     }
     &__content{
-        display: none;
         h1{
             color: #005662;
             font-size: 2.4rem;
@@ -107,6 +106,89 @@
                         padding-left: 15px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #727272A3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in .5s forwards;
+    &__box{
+        width: 1000px;
+        height: 664px;
+        background-color: #fff;
+        &__cross{
+            width: 26px;
+            height: 26px;
+            margin: 38px 40px 0 auto;
+            cursor: pointer;
+        }
+        &__heading{
+            color: $mainTextColor;
+            font-size: 2.4rem;
+            font-weight: $FontWeight;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        &__message{
+            color: $contentFontColor;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__select{
+            width: 670px;
+            height: 390px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px auto 0;
+            &__create{
+                width: 230px;
+                height: 230px;
+                background-color: #71BD29;
+                border-radius: 30px;
+                &__box{
+                    width: 220px;
+                    height: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    text-decoration: none;
+                    background: #fff;
+                    color: #005662;
+                    border: solid 8px #7ED22F;
+                    border-radius: 30px;
+                    font-size: 1.4rem;
+                    &__img{
+                        padding-left: 15px;
+                    }
+                }
+            }
+            &__border{
+                height: 100%;
+                border-right: solid 4px $borderColor;
             }
         }
     }

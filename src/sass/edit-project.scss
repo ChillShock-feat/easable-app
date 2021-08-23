@@ -55,7 +55,7 @@
             &__head{
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 15px;
+                padding-bottom: 20px;
                 border-bottom: solid 1px #DDDDDD;
                 &__projectname{
                     color: $mainTextColor;
@@ -152,6 +152,89 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #727272A3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in .5s forwards;
+    &__box{
+        width: 700px;
+        height: 595px;
+        background-color: #fff;
+        &__cross{
+            width: 26px;
+            height: 26px;
+            margin: 38px 40px 0 auto;
+            cursor: pointer;
+        }
+        &__heading{
+            color: $mainTextColor;
+            font-size: 2.4rem;
+            font-weight: $FontWeight;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        &__message{
+            color: $contentFontColor;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__select{
+            width: 670px;
+            height: 390px;
+            margin: 50px auto 0;
+            &__projectname{
+                color: $mainTextColor;
+                font-size: 2rem;
+                font-weight: $FontWeight;
+                text-align: center;
+                margin: 80px 0 60px;
+            }
+            &__remove{
+                display: block;
+                width: 430px;
+                line-height: 65px;
+                color: $contentFontColor;
+                font-size: 1.4rem;
+                font-weight: $FontWeight;
+                text-align: center;
+                border-radius: 125px;
+                border: solid 4px #83DB31;
+                margin: 0 auto 15px;
+            }
+            &__cancell{
+                display: block;
+                width: 430px;
+                line-height: 65px;
+                color: #fff;
+                font-size: 1.4rem;
+                font-weight: $FontWeight;
+                text-align: center;
+                border-radius: 125px;
+                background-color: #83DB31;
+                margin: 0 auto;
             }
         }
     }

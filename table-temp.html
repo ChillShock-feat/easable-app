@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>easable - home</title>
+    <title>easable - テンプレートテーブル追加</title>
+    <link rel="stylesheet" href="css/table-temp.css">
 </head>
 <body>
     <div class="wrapper">
@@ -96,75 +96,59 @@
                 </div>
             </section>
         </nav>
-        <main class="database">
-            <section class="database__navarea">
-                <section class="database__navarea__nav">
-                    <div class="database__navarea__nav__link change-content">データベース</div>
-                    <div class="database__navarea__nav__link change-content">ファイルアップロード</div>
-                    <div class="database__navarea__nav__link change-content">サーバー詳細</div>
-                </section> 
-                <section class="database__navarea__subnav">
-                    <a href="#" class="database__navarea__subnav__link">設計</a>
-                    <a href="#" class="database__navarea__subnav__link">使い方</a>
-                </section>
-            </section>
-            <div class="database__border-x"></div>
-            <section class="database__content show-content">
-                <h1>データベースA</h1>
-                <p class="database__content__servername">サーバー1</p>
-                <div class="database__content__tablewrap">
-                    <a href="tablelist.html" class="database__content__tablewrap__tablelist">
-                        <img src="img/tablelist-big.svg" alt="テーブルリストアイコン">
-                        <p class="database__content__tablewrap__tablelist__name">テーブルリスト</p>
-                    </a>
-                    <div class="database__content__tablewrap__background">
-                        <a href="#" class="database__content__tablewrap__background__tablelist-small" id="show_modal">
-                            <img src="img/tablelist-small.svg" alt="テーブル追加アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">テーブル追加</p>
-                        </a>
+        <main class="table-temp">
+            <h1 class="table-temp__heading">テンプレートで作成</h1>
+            <p class="table-temp__subheading">template</p>
+            <div class="table-temp__setting">
+                <h2 class="table-temp__setting__heading">ECサイト</h2>
+                <p class="table-temp__setting__subheading">ECsite</p>
+                <div class="table-temp__setting__tablebox">
+                    <div class="table-temp__setting__tablebox__table">
+                        <h3 class="table-temp__setting__tablebox__table__heading">ユーザーテーブル</h3>
+                        <p class="table-temp__setting__tablebox__table__subheading">ユーザーID、名前...</p>
+                        <p class="table-temp__setting__tablebox__table__explanation">
+                            プロフィール情報表示や新規登録、どのユーザが商品を注文したかを識別する際に使用するテーブルです。
+                        </p>
+                        <form action="#" method="post">
+                            <input type="button" value="テーブルをつくる" class="table-temp__setting__tablebox__table__btn">
+                        </form>
                     </div>
-                    <div class="database__content__tablewrap__background">
-                        <a href="edit-project.html" class="database__content__tablewrap__background__tablelist-small">
-                            <img src="img/tablelist-small.svg" alt="データベース編集アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">データベース編集</p>
-                        </a>
+                    <div class="table-temp__setting__tablebox__table">
+                        <h3 class="table-temp__setting__tablebox__table__heading">注文テーブル</h3>
+                        <p class="table-temp__setting__tablebox__table__subheading">ユーザーID、名前...</p>
+                        <p class="table-temp__setting__tablebox__table__explanation">
+                            プロフィール情報表示や新規登録、どのユーザが商品を注文したかを識別する際に使用するテーブルです。
+                        </p>
+                        <form action="#" method="post">
+                            <input type="button" value="テーブルをつくる" class="table-temp__setting__tablebox__table__btn">
+                        </form>
+                    </div>
+                    <div class="table-temp__setting__tablebox__table">
+                        <h3 class="table-temp__setting__tablebox__table__heading">カートテーブル</h3>
+                        <p class="table-temp__setting__tablebox__table__subheading">ユーザーID、名前...</p>
+                        <p class="table-temp__setting__tablebox__table__explanation">
+                            プロフィール情報表示や新規登録、どのユーザが商品を注文したかを識別する際に使用するテーブルです。
+                        </p>
+                        <form action="#" method="post">
+                            <input type="button" value="テーブルをつくる" class="table-temp__setting__tablebox__table__btn">
+                        </form>
+                    </div>
+                    <div class="table-temp__setting__tablebox__table">
+                        <h3 class="table-temp__setting__tablebox__table__heading">商品テーブル</h3>
+                        <p class="table-temp__setting__tablebox__table__subheading">ユーザーID、名前...</p>
+                        <p class="table-temp__setting__tablebox__table__explanation">
+                            プロフィール情報表示や新規登録、どのユーザが商品を注文したかを識別する際に使用するテーブルです。
+                        </p>
+                        <form action="#" method="post">
+                            <input type="button" value="テーブルをつくる" class="table-temp__setting__tablebox__table__btn">
+                        </form>
                     </div>
                 </div>
-            </section>
-            <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
-            </section>
-            <section class="database__content show-content">
-                <h2>サーバー詳細</h2>
-            </section>
-        </main>
-        <div class="modal" id="modal">
-            <div class="modal__box">
-                <div class="modal__box__cross" id="remove_modal">
-                    <img src="img/cross.svg" alt="閉じるボタン">
-                </div>
-                <h3 class="modal__box__heading">テーブルを追加する</h3>
-                <p class="modal__box__message">テーブル名に使用する名前を登録して下さい</p>
-                <div class="modal__box__select">
-                    <div class="modal__box__select__create">
-                        <a href="add-table.html" class="modal__box__select__create__box">
-                            <img src="img/tablelist-small.svg" alt="テーブルリストアイコン" class="modal__box__select__create__box__img">
-                            <p class="modal__box__select__create__box__name">オリジナルで作成</p>
-                        </a>
-                    </div>
-                    <div class="modal__box__select__border"></div>
-                    <div class="modal__box__select__create">
-                        <a href="table-temp.html" class="modal__box__select__create__box">
-                            <img src="img/tablelist-small.svg" alt="テーブルリストアイコン" class="modal__box__select__create__box__img">
-                            <p class="modal__box__select__create__box__name">テンプレートで作成</p>
-                        </a>
-                    </div>
+                <div class="table-temp__setting__scrollarea">
+                    <div class="table-temp__setting__scrollarea__bar"></div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
-<script src="js/nav.js"></script>
-<script src="js/index.js"></script>
-<script src="js/modal.js"></script>
 </body>
 </html>

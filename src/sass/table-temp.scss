@@ -1,0 +1,106 @@
+@import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.table-temp{
+    width: 80vw;
+    height: 100vh;
+    padding: 70px 40px 0 40px;
+    margin-left: 20%;
+    &__heading{
+        color: $mainTextColor;
+        font-size: 2.6rem;
+        font-weight: $FontWeight;
+        letter-spacing: 3px;
+    }
+    &__subheading{
+        color: $contentFontColor;
+        font-size: 1.8rem;
+        font-weight: $FontWeight;
+        letter-spacing: 3px;
+    }
+    &__setting{
+        width: 100%;
+        margin-top: 50px;
+        &__heading{
+            color: $mainTextColor;
+            font-size: 1.8rem;
+            font-weight: $FontWeight;
+            letter-spacing: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before{
+                display: block;
+                content: "";
+                width: 10px; 
+                border-top: 3px solid #005662;
+                margin-right: 10px;
+            }
+            &::after{
+                display: block;
+                content: "";
+                width: 10px; 
+                border-top: 3px solid #005662;
+                margin-left: 10px;
+            }
+        }
+        &__subheading{
+            color: $contentFontColor;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        &__tablebox{
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px auto;
+            &__table{
+                width: 440px;
+                height: 380px;
+                border: solid 4px #7ED22F;
+                border-radius: 8px;
+                margin: 0 20px 15px;
+                &__heading{
+                    color: $mainTextColor;
+                    font-size: 1.8rem;
+                    font-weight: $FontWeight;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                &__subheading{
+                    color: $contentFontColor;
+                    font-size: 1rem;
+                    font-weight: $FontWeight;
+                    text-align: center;
+                }
+                &__explanation{
+                    width: 340px;
+                    color: #262626;
+                    font-family: sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: $FontWeight;
+                    letter-spacing: 2.5px;
+                    margin: 30px auto 0;
+                }
+                &__btn{
+                    display: block;
+                    width: 340px;
+                    height: 50px;
+                    margin: 60px auto 0;
+                    background-color: #7ED22F;
+                    border-radius: 125px;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    font-weight: $FontWeight;
+                    letter-spacing: 2.5px;
+                }
+            }
+        }
+    }
+}

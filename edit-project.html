@@ -135,7 +135,7 @@
                             </div>
                             <div class="editproject__wrap__editarea__server__right__altcontent altcontent">
                                 <div class="editproject__wrap__editarea__server__right__altcontent__rename">名前を変更する</div>
-                                <div class="editproject__wrap__editarea__server__right__altcontent__delete">削除</div>
+                                <div class="editproject__wrap__editarea__server__right__altcontent__delete show_modal">削除</div>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                             </div>
                             <div class="editproject__wrap__editarea__server__right__altcontent altcontent">
                                 <div class="editproject__wrap__editarea__server__right__altcontent__rename">名前を変更する</div>
-                                <div class="editproject__wrap__editarea__server__right__altcontent__delete">削除</div>
+                                <div class="editproject__wrap__editarea__server__right__altcontent__delete show_modal">削除</div>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                             </div>
                             <div class="editproject__wrap__editarea__server__right__altcontent altcontent">
                                 <div class="editproject__wrap__editarea__server__right__altcontent__rename">名前を変更する</div>
-                                <div class="editproject__wrap__editarea__server__right__altcontent__delete">削除</div>
+                                <div class="editproject__wrap__editarea__server__right__altcontent__delete show_modal">削除</div>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                             </div>
                             <div class="editproject__wrap__editarea__server__right__altcontent altcontent">
                                 <div class="editproject__wrap__editarea__server__right__altcontent__rename">名前を変更する</div>
-                                <div class="editproject__wrap__editarea__server__right__altcontent__delete">削除</div>
+                                <div class="editproject__wrap__editarea__server__right__altcontent__delete show_modal">削除</div>
                             </div>
                         </div>
                     </div>
@@ -223,13 +223,27 @@
                             </div>
                             <div class="editproject__wrap__editarea__server__right__altcontent altcontent">
                                 <div class="editproject__wrap__editarea__server__right__altcontent__rename">名前を変更する</div>
-                                <div class="editproject__wrap__editarea__server__right__altcontent__delete">削除</div>
+                                <div class="editproject__wrap__editarea__server__right__altcontent__delete show_modal">削除</div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
+        <div class="modal" id="modal">
+            <div class="modal__box">
+                <div class="modal__box__cross" id="remove_modal">
+                    <img src="img/cross.svg" alt="閉じるボタン">
+                </div>
+                <h3 class="modal__box__heading">プロジェクトを削除しますか？</h3>
+                <p class="modal__box__message">プロジェクトを削除すると2度と復元できません</p>
+                <div class="modal__box__select">
+                    <p class="modal__box__select__projectname">プロジェクト1</p>
+                    <button class="modal__box__select__remove">プロジェクトを削除する</button>
+                    <button class="modal__box__select__cancell">キャンセル</button>
+                </div>
+            </div>
+        </div>
     </div>
 <script src="js/nav.js"></script>
 <script src="js/edit-project.js"></script>

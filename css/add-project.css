@@ -381,6 +381,109 @@ body {
   font-family: 'M PLUS 1p', sans-serif;
 }
 
+.nav {
+  width: 20vw;
+  height: 100vh;
+  background-color: #7ED22F;
+  padding: 10rem 2.5rem 0;
+  color: #fff;
+  overflow-y: scroll;
+  position: fixed;
+}
+
+.nav__title {
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__title p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav__title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav__project {
+  width: 100%;
+}
+
+.nav__project__box {
+  height: 55px;
+  background-color: #ffffff3D;
+  border: solid 4px #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__project__box p {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.nav__project__box__img {
+  transform: rotate(-90deg);
+}
+
+.nav__project__openlist p {
+  color: #fff;
+}
+
+.nav__project__toggleimg {
+  transition: .3s;
+  transform: rotate(0deg);
+}
+
+.nav__project__toggleimg path {
+  fill: #fff;
+}
+
+.nav__project__serverlist {
+  width: 100%;
+  display: none;
+}
+
+.nav__project__serverlist__server, .nav__project__serverlist__newserver {
+  line-height: 42px;
+  background-color: #ffffff3D;
+  margin: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav__project__serverlist__server__active, .nav__project__serverlist__newserver__active {
+  width: 6px;
+  height: 6px;
+  background-color: #F9F400;
+  border-radius: 100%;
+  margin-left: 15px;
+}
+
+.nav__project__serverlist__server p, .nav__project__serverlist__newserver p {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav__project__openserver {
+  display: block;
+}
+
 .wrapper {
   width: 100vw;
   display: flex;

@@ -13,4 +13,19 @@
             }
         }
     }
+
+    let modal = document.getElementById('modal');
+    let showModal = document.getElementsByClassName('show_modal');
+    let removeModal = document.getElementById('remove_modal');
+
+    for (let n = 0; n < showModal.length; n++) {
+        showModal[n].onclick = () =>{
+            if(flg = !flg){
+                modal.style.display = 'flex';
+            }
+        }
+        removeModal.onclick = () =>{
+            modal.style.display = 'none';
+        }
+    }
 }

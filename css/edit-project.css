@@ -555,7 +555,7 @@ body {
 .editproject__wrap__editarea__head {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   border-bottom: solid 1px #DDDDDD;
 }
 
@@ -665,4 +665,107 @@ body {
 
 .editproject__wrap__editarea__server__right__altcontent__delete {
   border-top: solid 1px #DDDDDD;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: #727272A3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: fade-in .5s forwards;
+          animation: fade-in .5s forwards;
+}
+
+.modal__box {
+  width: 700px;
+  height: 595px;
+  background-color: #fff;
+}
+
+.modal__box__cross {
+  width: 26px;
+  height: 26px;
+  margin: 38px 40px 0 auto;
+  cursor: pointer;
+}
+
+.modal__box__heading {
+  color: #005662;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modal__box__message {
+  color: #7ED22F;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.modal__box__select {
+  width: 670px;
+  height: 390px;
+  margin: 50px auto 0;
+}
+
+.modal__box__select__projectname {
+  color: #005662;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 80px 0 60px;
+}
+
+.modal__box__select__remove {
+  display: block;
+  width: 430px;
+  line-height: 65px;
+  color: #7ED22F;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 125px;
+  border: solid 4px #83DB31;
+  margin: 0 auto 15px;
+}
+
+.modal__box__select__cancell {
+  display: block;
+  width: 430px;
+  line-height: 65px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 125px;
+  background-color: #83DB31;
+  margin: 0 auto;
 }

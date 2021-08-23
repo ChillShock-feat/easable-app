@@ -4,7 +4,6 @@
         // navClickActive
         let contentBtn = document.getElementsByClassName('change-content');
         let showContent = document.getElementsByClassName('show-content');
-        let aaa;
         
         for (let i = 0; i < contentBtn.length; i++) {
             let element = contentBtn[i];

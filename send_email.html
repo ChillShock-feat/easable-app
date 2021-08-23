@@ -11,11 +11,13 @@
     <div class="send-email">
         <h1 class="send-email__title">新規登録</h1>
         <p class="send-email__subtitle">Sign up</p>
-        <form action="" method="get" class="send-email__form">
+        <form action="" method="get" class="send-email__form" name="email_form">
             <label class="send-email__form__title">メールアドレス</label><br>
             <input type="email" name="email" id="email" class="send-email__form__textarea">
-            <input type="submit" value="メールを送信する" class="send-email__form__submit">
+            <p class="send-email__form__error" id="error">メールアドレスが入力されていません。</p>
+            <input type="submit" value="メールを送信する" class="send-email__form__submit" id="submit">
         </form>
     </div>
+<script src="js/send_email.js"></script>
 </body>
 </html>

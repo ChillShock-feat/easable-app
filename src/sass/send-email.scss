@@ -37,6 +37,13 @@
             font-size: 2rem;
             margin-top: 10px;
         }
+        &__error{
+            visibility: hidden;
+            color: $mainTextColor;
+            font-size: 1rem;
+            font-weight: $FontWeight;
+            margin-top: 8px;
+        }
         &__submit{
             width: 100%;
             line-height: 64px;

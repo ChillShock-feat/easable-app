@@ -1,0 +1,98 @@
+@import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.table-success{
+    width: 80vw;
+    height: 100vh;
+    margin-left: 20%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    &__box{
+        width: 700px;
+        height: 600px;
+        border: solid 2px #dddddd66;
+        border-radius: 12px;
+        box-sizing: border-box;
+        box-shadow: 0px 16px 16px 0px #00000066;
+        margin: 0px auto;
+        position: relative;
+        cursor: pointer;
+        &__cross{
+            position: absolute;
+            top: 35px;
+            right: 37px;
+        }
+        &__circle{
+            width: 54px;
+            height: 54px;
+            background-color: #C4C4C4;
+            border-radius: 100%;
+            margin: 80px auto 30px;
+        }
+        h1{
+            color: $mainTextColor;
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        &__word{
+            color: #7ED22F;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        &__check{
+            width: 400px;
+            margin: 60px auto 0;
+            &__tableheading{
+                color: #C4C4C4;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            &__tablename{
+                width: 100%;
+                color: $mainTextColor;
+                font-size: 2rem;
+                border-radius: 6px;
+                letter-spacing: 3px;
+                text-align: center;
+            }
+        }
+        &__linkarea{
+            width: 400px;
+            margin: 65px auto 0;
+            &__projectdata{
+                margin-bottom: 15px;
+                &__edit{
+                    width: 100%;
+                    height: 65px;
+                    background-color: #fff;
+                    border: solid 4px #83DB31;
+                    border-radius: 125px;
+                    color: #83DB31;
+                    font-size: 1.6rem;
+                    font-weight: $FontWeight;
+                }
+            }
+            &__link{
+                display: inline-block;
+                width: 400px;
+                line-height: 65px;
+                background-color: #83DB31;
+                border-radius: 125px;
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: $FontWeight;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
