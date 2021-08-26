@@ -1,0 +1,158 @@
+@import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    display: flex;
+}
+.editproject{
+    width: 80vw;
+    padding: 70px 40px 0 40px;
+    margin-left: 20%;
+    &__nav{
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        &__link{
+            color: #2F3136;
+            font-size: 1.2rem;
+            font-weight: $FontWeight;
+            text-decoration: none;
+            margin: 2px 10px 0;
+        }
+    }
+    &__border-x{
+        margin: 20px 0 50px;
+        border: solid 4px #2626260A;
+    }
+    h1{
+        color: $mainTextColor;
+        font-size: 2.4rem;
+        font-weight: $FontWeight;
+    }
+    &__wrap{
+        display: flex;
+        margin-top: 40px;
+        &__list{
+            width: 20%;
+            &__word{
+                color: $mainTextColor;
+                font-size: 1.2rem;
+                font-weight: $FontWeight;
+                margin-bottom: 35px;
+            }
+            &__content{
+                color: $mainTextColor;
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            &__active{
+                font-weight: $FontWeight;
+            }
+        }
+        &__editarea{
+            width: 60%;
+            &__head{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 15px;
+                border-bottom: solid 1px #DDDDDD;
+                &__projectname{
+                    color: $mainTextColor;
+                    font-size: 1.2rem;
+                    font-weight: $FontWeight;
+                    padding-left: 30px;
+                }
+                &__altbtn{
+                    cursor: pointer;
+                    margin-right: 20px;
+                }
+            }
+            &__server{
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: solid 1px #DDDDDD;
+                position: relative;
+                &__left{
+                    display: flex;
+                    align-items: center;
+                    &__checkbox{
+                        transform: scale(1.5);
+                        margin: 0px 15px 0px;
+                    }
+                    &__box{
+                        &__name{
+                            color: $projectTextColor;
+                            font-size: 1.6rem;
+                            font-weight: $FontWeight;
+                        }
+                        &__date{
+                            color: $projectTextColor;
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                &__right{
+                    display: flex;
+                    margin-right: 20px;
+                    &__editbtn{
+                        width: 135px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: $projectTextColor;
+                        font-size: 1.2rem;
+                        font-weight: $FontWeight;
+                        border: solid 2px #DDDDDD;
+                        cursor: pointer;
+                    }
+                    &__altbtn{
+                        line-height: 30px;
+                        margin-left: 20px;
+                        cursor: pointer;
+                    }
+                    &__altcontent{
+                        display: none;
+                        width: 160px;
+                        height: 110px;
+                        border: solid 1px #DDDDDD;
+                        background-color: #fff;
+                        position: absolute;
+                        top: -25px;
+                        right: 10px;
+                        z-index: 10;
+                        &::before, &::after{
+                            content: "";
+                            position: absolute;
+                            top: -8%;
+                            left: 90%;
+                            transform: translateX(-50%);
+                        }
+                        &::before{
+                            border: solid 4px transparent;
+                            border-bottom: solid 4px #DDDDDD;
+                        }
+                        &::after{
+                            border: solid 6px transparent;
+                            border-bottom: solid 6px #fff;
+                        }
+                        &__rename{
+                            line-height: 55px;
+                            color: $projectTextColor;
+                            font-size: 1.4rem;
+                            font-weight: 300;
+                            padding-left: 18px;
+                            cursor: pointer;
+                        }
+                        &__delete{
+                            @extend .editproject__wrap__editarea__server__right__altcontent__rename;
+                            border-top: solid 1px #DDDDDD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

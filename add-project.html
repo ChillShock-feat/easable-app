@@ -1,24 +1,12 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-=======
 <html lang="ja">
->>>>>>> maru
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>APIテスト</title>
-    <script src="user_index.js" defer></script>
-</head>
-<body>
-    <div class="root" id="root">
-
-    </div>
-=======
-    <link rel="stylesheet" href="css/index.css">
-    <title>easable - home</title>
+    <title>easable - プロジェクト追加</title>
+    <link rel="stylesheet" href="css/add-project.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -36,20 +24,20 @@
                 </div>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
                         <p>
-                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                            <img src="img/plus.svg" alt="プラスアイコン">
                             &nbsp;新規サーバー作成</p>
                     </div>
                 </div>
@@ -63,15 +51,15 @@
                 </div>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
@@ -90,15 +78,15 @@
                 </div>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span></span>
+                        <span class="nav__project__serverlist__server__active"></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
@@ -109,51 +97,30 @@
                 </div>
             </section>
         </nav>
-        <main class="database">
-            <section class="database__navarea">
-                <section class="database__navarea__nav">
-                    <div class="database__navarea__nav__link change-content">データベース</div>
-                    <div class="database__navarea__nav__link change-content">ファイルアップロード</div>
-                    <div class="database__navarea__nav__link change-content">サーバー詳細</div>
-                </section> 
-                <section class="database__navarea__subnav">
-                    <a href="#" class="database__navarea__subnav__link">設計</a>
-                    <a href="#" class="database__navarea__subnav__link">使い方</a>
-                </section>
-            </section>
-            <div class="database__border-x"></div>
-            <section class="database__content show-content">
-                <h1>データベースA</h1>
-                <p class="database__content__servername">サーバー1</p>
-                <div class="database__content__tablewrap">
-                    <a href="#" class="database__content__tablewrap__tablelist">
-                        <img src="img/tablelist-big.svg" alt="テーブルリストアイコン">
-                        <p class="database__content__tablewrap__tablelist__name">テーブルリスト</p>
-                    </a>
-                    <div class="database__content__tablewrap__background">
-                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
-                            <img src="img/tablelist-small.svg" alt="テーブル追加アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">テーブル追加</p>
-                        </a>
-                    </div>
-                    <div class="database__content__tablewrap__background">
-                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
-                            <img src="img/tablelist-small.svg" alt="データベース編集アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">データベース編集</p>
-                        </a>
-                    </div>
+        <main class="newproject">
+            <div class="newproject__box">
+                <div class="newproject__box__cross">
+                    <img src="img/cross.svg" alt="罰印アイコン">
                 </div>
-            </section>
-            <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
-            </section>
-            <section class="database__content show-content">
-                <h2>サーバー詳細</h2>
-            </section>
+                <div class="newproject__box__circle"></div>
+                <h1>新規プロジェクトをつくる</h1>
+                <p class="newproject__box__word">新規プロジェクトに使用する名前を登録して下さい</p>
+                <form action="#" method="post" class="newproject__box__projectdata">
+                    <div class="newproject__box__projectdata__name">
+                        <label>プロジェクト名</label>
+                        <input type="text" name="projectname" size="100" id="projectname-1">
+                    </div>
+                    <div class="newproject__box__projectdata__name" id="addserver-parent">
+                        <label>サーバー名</label>
+                        <input type="text" name="servername" id="servername-1">
+                    </div>
+                    <!-- <div class="newproject__box__projectdata__addserver" id="addserver">＋ サーバーを追加する</div> -->
+                    <input type="submit" value="テーブルをつくる" class="newproject__box__projectdata__submit">
+                </form>
+            </div>
         </main>
     </div>
 <script src="js/nav.js"></script>
-<script src="js/index.js"></script>
->>>>>>> maru
+<!-- <script src="js/add-project.js"></script> -->
 </body>
 </html>

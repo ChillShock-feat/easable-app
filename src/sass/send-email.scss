@@ -1,5 +1,5 @@
-@import '_ress', '_var', '_common', '_nav';
-.signin{
+@import '_ress', '_var', '_common';
+.send-email{
     width: 415px;
     height: 700px;
     margin: 0 auto;
@@ -37,26 +37,14 @@
             font-size: 2rem;
             margin-top: 10px;
         }
-        &__forget{
-            display: inline-block;
-            color: #C4C4C4;
-            font-size: 1.2rem;
-            font-weight: $FontWeight;
-            text-decoration: none;
-            margin-top: 20px;
-        }
         &__submit{
             width: 100%;
             line-height: 64px;
             background-color: #83DB31;
             border-radius: 125px;
             color: #fff;
-            font-size: 1.4rem;
             margin-top: 25px;
+            font-size: 1.4rem;
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> maru
