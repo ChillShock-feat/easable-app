@@ -103,18 +103,7 @@ SET
     `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 COMMIT;
-INSERT INTO
-  user (password, name, email)
-VALUES
-  ('admin', 'admin', 'admin@admin.com');
-INSERT INTO
-  user (password, name, email)
-VALUES
-  ('test', 'test', 'test@test.com');
-INSERT INTO
-  user (password, name, email)
-VALUES
-  ('chil', 'chil', 'chil@chil.com');
+
   /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
   /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
   /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
