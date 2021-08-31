@@ -4,15 +4,14 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easable - サーバー追加</title>
     <link rel="stylesheet" href="css/index.css">
-    <title>easable - home</title>
+    <link rel="stylesheet" href="css/add-project.css">
 </head>
-
 <body>
     <div class="wrapper">
         <nav class="nav">
@@ -20,15 +19,15 @@ session_start();
                 <p>プロジェクトリスト</p>
                 <a href="#">編集</a>
             </div>
+            <!-- easable-back から project と projectに含まれるID を取得 -->
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                    </svg>    
                     <p>プロジェクト1</p>
                 </div>
-                <form action="add_server.php" method='GET'>
+                <form action="" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
                         <span></span>
@@ -50,16 +49,16 @@ session_start();
                     </div>
                     <input name='project_id' value='1' hidden/>
                 </form>
+                </div>
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                    </svg>    
                     <p>プロジェクト2</p>
                 </div>
-                <form action="add_server.php" method='GET'>
+                <form action="" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
                         <span></span>
@@ -84,13 +83,12 @@ session_start();
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
+                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                    </svg>    
                     <p>プロジェクト3</p>
                 </div>
-                <form action="add_server.php" method='GET'>
+                <form action="" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
                         <span></span>
@@ -112,53 +110,31 @@ session_start();
                     </div>
                     <input name='project_id' value='3' hidden/>
                 </form>
-            </section>
-        </nav>
-        <main class="database">
-            <section class="database__navarea">
-                <section class="database__navarea__nav">
-                    <div class="database__navarea__nav__link change-content">データベース</div>
-                    <div class="database__navarea__nav__link change-content">ファイルアップロード</div>
-                    <div class="database__navarea__nav__link change-content">サーバー詳細</div>
-                </section>
-                <section class="database__navarea__subnav">
-                    <a href="#" class="database__navarea__subnav__link">設計</a>
-                    <a href="#" class="database__navarea__subnav__link">使い方</a>
-                </section>
-            </section>
-            <div class="database__border-x"></div>
-            <section class="database__content show-content">
-                <h1>データベースA</h1>
-                <p class="database__content__servername">サーバー1</p>
-                <div class="database__content__tablewrap">
-                    <a href="#" class="database__content__tablewrap__tablelist">
-                        <img src="img/tablelist-big.svg" alt="テーブルリストアイコン">
-                        <p class="database__content__tablewrap__tablelist__name">テーブルリスト</p>
-                    </a>
-                    <div class="database__content__tablewrap__background">
-                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
-                            <img src="img/tablelist-small.svg" alt="テーブル追加アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">テーブル追加</p>
-                        </a>
-                    </div>
-                    <div class="database__content__tablewrap__background">
-                        <a href="#" class="database__content__tablewrap__background__tablelist-small">
-                            <img src="img/tablelist-small.svg" alt="データベース編集アイコン">
-                            <p class="database__content__tablewrap__background__tablelist-small__name">データベース編集</p>
-                        </a>
-                    </div>
                 </div>
             </section>
-            <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
-            </section>
-            <section class="database__content show-content">
-                <h2>サーバー詳細</h2>
-            </section>
+        </nav>
+        <main class="newproject">
+            <div class="newproject__box">
+                <div class="newproject__box__circle"></div>
+                <h1>新規サーバーを追加する</h1>
+                <p class="newproject__box__word">テーブル名に使用する名前を登録して下さい</p>
+                <form action="https://back.easable.jp/easable-back/app/controller/create_server.php" method="post" class="newproject__box__projectdata">
+                    <div class="newproject__box__projectdata__name" id="addserver-parent">
+                        <label>サーバー名</label>
+
+                        <!-- javascriptで countを使って  createElementにname{server[severname(i++)]}を振って欲しい 丸くんよ -->
+                        <input type="text" name="server[servername]" id="servername-1" required>
+                        <!-- <input type="text" name="server[servername1]" id="servername-1"> -->
+                    </div>
+                    <div class="newproject__box__projectdata__addserver" id="addserver">＋ サーバーを追加する</div>
+                    <input name='project_id' value="<?php echo $_GET['project_id']?>" hidden/>
+                    <input name='user_id' value="<?php echo $_SESSION['user']['id']?>" hidden/>
+                    <input type="submit" value="サーバーをつくる" class="newproject__box__projectdata__submit">
+                </form>
+            </div>
         </main>
     </div>
-    <script src="js/nav.js"></script>
-    <script src="js/index.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/add-project.js"></script>
 </body>
-
 </html>

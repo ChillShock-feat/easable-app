@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>easable - プロジェクト追加</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/add-project.css">
     
 </head>
@@ -22,25 +27,28 @@
                     </svg>    
                     <p>プロジェクト1</p>
                 </div>
+                <form action="add_server.php" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>
-                            <img src="img/plus.svg" alt="プラスアイコン">
-                            &nbsp;新規サーバー作成</p>
+                        <button>
+                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                            &nbsp;新規サーバー作成
+                        </button>
                     </div>
-                </div>
+                    <input name='project_id' value='1' hidden/>
+                </form>
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
@@ -49,25 +57,28 @@
                     </svg>    
                     <p>プロジェクト2</p>
                 </div>
+                <form action="add_server.php" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>
+                        <button>
                             <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成</p>
+                            &nbsp;新規サーバー作成
+                        </button>
                     </div>
-                </div>
+                    <input name='project_id' value='2' hidden/>
+                </form>
             </section>
             <section class="nav__project">
                 <div class="nav__project__box nav-toggle">
@@ -76,25 +87,28 @@
                     </svg>    
                     <p>プロジェクト3</p>
                 </div>
+                <form action="add_server.php" method='GET'>
                 <div class="nav__project__serverlist show-list">
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー1</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー2</p>
                     </div>
                     <div class="nav__project__serverlist__server">
-                        <span class="nav__project__serverlist__server__active"></span>
+                        <span></span>
                         <p>サーバー3</p>
                     </div>
                     <div class="nav__project__serverlist__newserver">
-                        <p>
+                        <button>
                             <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成</p>
+                            &nbsp;新規サーバー作成
+                        </button>
                     </div>
-                </div>
+                    <input name='project_id' value='3' hidden/>
+                </form>
             </section>
         </nav>
         <main class="newproject">
