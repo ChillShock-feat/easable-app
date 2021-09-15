@@ -4,6 +4,7 @@ require_once 'getbackdata.php';
 $back_handle = new GetBackData();
 $sql['select'] = 'SELECT * FROM project where user_id = '.$_SESSION['user']['id'];
 $data = $back_handle->getData($sql);
+setcookie('project_id',$_GET['project_id']);
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +25,7 @@ $data = $back_handle->getData($sql);
                 <a href="#">編集</a>
             </div>
             <?php
+                $serverDatas;
                 foreach($data as $value){
             ?>
                 <section class="nav__project">
@@ -39,6 +41,9 @@ $data = $back_handle->getData($sql);
                     <?php
                         $sql['select'] = "SELECT * FROM server WHERE project_id = ".$value['id'];
                         $server = $back_handle->getData($sql);
+                        if($_GET['project_id'] === $value['id']){
+                            $serverDatas = json_encode($server);
+                        }
                         foreach($server as $server_value){
                     ?>
                     <div class="nav__project__serverlist__server">
@@ -177,5 +182,9 @@ $data = $back_handle->getData($sql);
     </div>
 <script src="js/nav.js"></script>
 <script src="js/add-project.js"></script>
+<script>
+var serverData = JSON.parse('<?php echo $serverDatas; ?>');
+</script>
+<script type="text/javascript" src="js/input-check.js"></script>
 </body>
 </html>

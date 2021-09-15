@@ -5,4 +5,4 @@ $_SESSION['user']['name'] = $_GET['name'];
 $_SESSION['user']['email'] = $_GET['email'];
 $_SESSION['user']['id'] = $_GET['id'];
 
-header('Location:./index.php');
+header('Location:./add-project.php');
