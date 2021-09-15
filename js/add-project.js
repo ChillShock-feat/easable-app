@@ -12,9 +12,12 @@
             let newServerData = document.createElement('input');
             newServerData.type = 'text';
             newServerData.id = 'servername-' + i;
+            newServerData.name = `server[servername${i}]`;
             parent.appendChild(serverLabel);
             parent.appendChild(newServerData);
             i++;
+
+            console.log(newServerData);
         }
     }
 }

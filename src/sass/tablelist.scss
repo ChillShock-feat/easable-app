@@ -143,6 +143,7 @@
                 font-weight: $FontWeight;
             }
             &__edit{
+                display: inline-block;
                 width: 295px;
                 line-height: 54px;
                 border: solid 2px #00566266;
@@ -153,6 +154,7 @@
                 font-weight: $FontWeight;
                 letter-spacing: 5px;
                 text-align: center;
+                text-decoration: none;
                 cursor: pointer;
                 margin-top: 50px;
                 position: relative;

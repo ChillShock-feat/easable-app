@@ -13,7 +13,7 @@
     align-items: center;
     &__box{
         width: 700px;
-        height: 600px;
+        // height: 600px;
         border: solid 2px #dddddd66;
         border-radius: 12px;
         box-sizing: border-box;
@@ -84,7 +84,7 @@
                 color: #fff;
                 font-size: 1.6rem;
                 font-weight: $FontWeight;
-                margin-top: 40px;
+                margin: 40px 0 115px;
             }
         }
     }

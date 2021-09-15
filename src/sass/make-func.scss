@@ -1,0 +1,142 @@
+@import '_ress', '_var', '_common', '_nav';
+.wrapper{
+    width: 100vw;
+    display: flex;
+}
+.nav__link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: $FontWeight;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &__img{
+        padding-right: 15px;
+    }
+}
+.make-func{
+    width: 80vw;
+    height: 100vh;
+    padding: 70px 40px 0 40px;
+    margin-left: 20%;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        &__heading{
+            color: $mainTextColor;
+            font-size: 2.2rem;
+            font-weight: $FontWeight;
+            letter-spacing: 2.4px;
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+            &__link{
+                color: #005662;
+                font-size: 1.4rem;
+                font-weight: $FontWeight;
+                text-decoration: none;
+                margin: 0 10px;
+                padding-top: 2px;
+            }
+        }
+    }
+    &__border-x{
+        border: solid 4px #2626260A;
+    }
+    &__wrap{
+        width: 100%;
+        display: flex;
+        &__listwrap{
+           width: 525px;
+           margin-top: 60px;
+           &__listarea{
+               &__heading{
+                   color: $mainTextColor;
+                   font-size: 1.4rem;
+                   font-weight: $FontWeight;
+                   letter-spacing: 2.4px;
+                   margin-bottom: 30px;
+               }
+               &__list{
+                   margin-bottom: 65px;
+                   &__content{
+                       width: 100%;
+                       line-height: 50px;
+                       border: solid 3px #F6F6F6;
+                       border-radius: 4px;
+                       display: flex;
+                       align-items: center;
+                       color: $mainTextColor;
+                       font-size: 1.2rem;
+                       font-weight: $FontWeight;
+                       letter-spacing: 4px;
+                       margin-bottom: 15px;
+                       &__title{
+                           margin: 0 15px 0 20px;
+                       }
+                       &__copy{
+                           color: #26262666;
+                           font-size: 1rem;
+                           font-weight: $FontWeight;
+                           letter-spacing: 2px;
+                           margin: 0 0 0 auto;
+                           padding-right: 15px;
+                           cursor: pointer;
+                       }
+                   }
+               }
+           }
+        }
+        &__btnwrap{
+            display: flex;
+            flex-direction: column;
+            margin: 95px auto 0;
+            &__box{
+                width: 320px;
+                height: 70px;
+                background-color: #71BD29;
+                border-radius: 125px;
+                margin-bottom: 15px;
+                &__btn01{
+                    width: 320px;
+                    height: 63px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 0;
+                    right: 6px;
+                    text-decoration: none;
+                    background: #7ED22F;
+                    color: #fff;
+                    border-radius: 125px;
+                    font-size: 1.4rem;
+                    &__img{
+                        padding-right: 15px;
+                    }
+                }
+                &__btn02{
+                    width: 320px;
+                    height: 63px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    top: 0;
+                    right: 6px;
+                    text-decoration: none;
+                    background: #fff;
+                    border: solid 2px #83DB31;
+                    color: #7ED22F;
+                    border-radius: 125px;
+                    font-size: 1.4rem;
+                    &__img{
+                        position: absolute;
+                        right: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
