@@ -10,6 +10,11 @@
 <body>
     <div class="wrapper">
         <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="easableロゴ">
+                </a>
+            </div>
             <div class="nav__title">
                 <p>プロジェクトリスト</p>
                 <a href="#">編集</a>
@@ -37,7 +42,8 @@
                     <div class="nav__project__serverlist__newserver">
                         <p>
                             <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成</p>
+                            &nbsp;新規サーバー作成
+                        </p>
                     </div>
                 </div>
             </section>
@@ -132,7 +138,21 @@
                 </div>
             </section>
             <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
+                <div class="database__content__upload">
+                    <h2 class="database__content__upload__heading">
+                        アップロードしたい<br>
+                        ファイルを選択
+                    </h2>
+                    <div class="database__content__upload__img">
+                        <img src="img/cloud.svg" alt="雲のアイコン">
+                    </div>
+                    <form action="" method="post">
+                        <label class="database__content__upload__select">
+                            ファイルを選択
+                            <input type="file" name="upload_file" id="upload_file" class="database__content__upload__select__file">
+                        </label>
+                    </form>
+                </div>
             </section>
             <section class="database__content show-content">
                 <h2>サーバー詳細</h2>

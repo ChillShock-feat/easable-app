@@ -108,6 +108,34 @@
                 }
             }
         }
+        &__upload{
+            text-align: center;
+            margin-top: 160px;
+            &__heading{
+                color: #cbcbcb;
+                font-size: 2.4rem;
+                letter-spacing: 10px;
+                line-height: 36px;
+            }
+            &__img{
+                margin: 40px 0;
+            }
+            &__select{
+                display: inline-block;
+                width: 430px;
+                line-height: 64px;
+                background-color: #83DB31;
+                border-radius: 125px;
+                color: #fff;
+                font-size: 1.4rem;
+                letter-spacing: 2.4px;
+                font-weight: $FontWeight;
+                cursor: pointer;
+                &__file{
+                    display: none;
+                }
+            }
+        }
     }
 }
 

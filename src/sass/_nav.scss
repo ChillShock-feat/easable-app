@@ -7,6 +7,10 @@
     color: #fff;
     overflow-y: scroll;
     position: fixed;
+    &__logo{
+        text-align: center;
+        margin-bottom: 60px;
+    }
     &__title{
         padding-bottom: 4rem;
         display: flex;
@@ -14,13 +18,14 @@
         justify-content: space-around;
         align-items: center;
         p{
-            font-size: 1.6rem;
+            font-size: 2.2rem;
             font-weight: $FontWeight;
         }
         a{
             color: #fff;
             text-decoration: none;
             font-size: 1.2rem;
+            font-weight: 300;
         }
     }
     &__project{
@@ -39,6 +44,7 @@
                 color: $navTextColor;
                 font-size: 1.4rem;
                 font-weight: $FontWeight;
+                letter-spacing: 2.4px;
                 padding-left: 10px;
             }
             &__img{
@@ -46,7 +52,6 @@
             }
         }
         &__openlist{
-            // border: solid 1px #fff;
             p{
                 color: #fff;
             }
@@ -77,11 +82,18 @@
                 }
                 p{
                     width: 70%;
-                    margin: 0 auto;
+                    // margin: 0 auto;
+                    margin-left: 35px;
                     color: #fff;
                     font-size: 1.2rem;
                     font-weight: $FontWeight;
                 }
+            }
+            &__newserver{
+                border: solid 3px #fff;
+                border-radius: 10px;
+                margin-bottom: 55px;
+                margin-right: 10px;
             }
         }
         &__openserver{

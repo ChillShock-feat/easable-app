@@ -391,6 +391,11 @@ body {
   position: fixed;
 }
 
+.nav__logo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .nav__title {
   padding-bottom: 4rem;
   display: flex;
@@ -400,7 +405,7 @@ body {
 }
 
 .nav__title p {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -408,6 +413,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .nav__project {
@@ -430,6 +436,7 @@ body {
   color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 600;
+  letter-spacing: 2.4px;
   padding-left: 10px;
 }
 
@@ -474,10 +481,17 @@ body {
 
 .nav__project__serverlist__server p, .nav__project__serverlist__newserver p {
   width: 70%;
-  margin: 0 auto;
+  margin-left: 35px;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.nav__project__serverlist__newserver {
+  border: solid 3px #fff;
+  border-radius: 10px;
+  margin-bottom: 55px;
+  margin-right: 10px;
 }
 
 .nav__project__openserver {
@@ -608,6 +622,39 @@ body {
 
 .database__content__tablewrap__background__tablelist-small img {
   padding-left: 15px;
+}
+
+.database__content__upload {
+  text-align: center;
+  margin-top: 160px;
+}
+
+.database__content__upload__heading {
+  color: #cbcbcb;
+  font-size: 2.4rem;
+  letter-spacing: 10px;
+  line-height: 36px;
+}
+
+.database__content__upload__img {
+  margin: 40px 0;
+}
+
+.database__content__upload__select {
+  display: inline-block;
+  width: 430px;
+  line-height: 64px;
+  background-color: #83DB31;
+  border-radius: 125px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2.4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.database__content__upload__select__file {
+  display: none;
 }
 
 @-webkit-keyframes fade-in {
