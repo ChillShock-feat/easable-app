@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easable - テーブルリスト</title>
+    <link rel="stylesheet" href="css/tablelist.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <div class="nav__title">
+            <p>プロジェクトリスト</p>
+            <a href="#">編集</a>
+        </div>
+        <section class="nav__project">
+            <div class="nav__project__box nav-toggle">
+                <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                </svg>    
+                <p>プロジェクト1</p>
+            </div>
+            <div class="nav__project__serverlist show-list">
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー1</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー2</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー3</p>
+                </div>
+                <div class="nav__project__serverlist__newserver">
+                    <p>
+                        <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                        &nbsp;新規サーバー作成</p>
+                </div>
+            </div>
+        </section>
+        <section class="nav__project">
+            <div class="nav__project__box nav-toggle">
+                <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                </svg>    
+                <p>プロジェクト2</p>
+            </div>
+            <div class="nav__project__serverlist show-list">
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー1</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー2</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー3</p>
+                </div>
+                <div class="nav__project__serverlist__newserver">
+                    <p>
+                        <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                        &nbsp;新規サーバー作成</p>
+                </div>
+            </div>
+        </section>
+        <section class="nav__project">
+            <div class="nav__project__box nav-toggle">
+                <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
+                </svg>    
+                <p>プロジェクト3</p>
+            </div>
+            <div class="nav__project__serverlist show-list">
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー1</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー2</p>
+                </div>
+                <div class="nav__project__serverlist__server">
+                    <span></span>
+                    <p>サーバー3</p>
+                </div>
+                <div class="nav__project__serverlist__newserver">
+                    <p>
+                        <span><img src="img/plus.svg" alt="プラスアイコン"></span>
+                        &nbsp;新規サーバー作成</p>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <main class="tablelist">
+        <section class="tablelist__navarea">
+            <section class="tablelist__navarea__nav">
+                <div class="tablelist__navarea__nav__link change-content">データベース</div>
+                <div class="tablelist__navarea__nav__link change-content">ファイルアップロード</div>
+                <div class="tablelist__navarea__nav__link change-content">サーバー詳細</div>
+            </section> 
+            <section class="tablelist__navarea__subnav">
+                <a href="#" class="tablelist__navarea__subnav__link">設計</a>
+                <a href="#" class="tablelist__navarea__subnav__link">使い方</a>
+            </section>
+        </section>
+        <div class="tablelist__border-x"></div>
+        <section class="tablelist__content show-content">
+            <div class="tablelist__content__listwrap">
+                <h2 class="tablelist__content__listwrap__heading">テーブルリスト</h2>
+                <p class="tablelist__content__listwrap__name">データベースA</p>
+                <div class="tablelist__content__listwrap__list">
+                    <div class="tablelist__content__listwrap__list__select">テーブルA
+                        <span><img src="img/triangle-color.svg" alt="色付き三角形"></span>
+                    </div>
+                    <div class="tablelist__content__listwrap__list__select">テーブルB
+                        <span><img src="img/triangle-color.svg" alt="色付き三角形"></span>
+                    </div>
+                    <div class="tablelist__content__listwrap__list__select">テーブルC
+                        <span><img src="img/triangle-color.svg" alt="色付き三角形"></span>
+                    </div>
+                </div>
+                <div class="tablelist__content__listwrap__background01">
+                    <a href="#" class="tablelist__content__listwrap__background01__funclist">機能一覧</a>
+                </div>
+                <div class="tablelist__content__listwrap__background02">
+                    <a href="#" class="tablelist__content__listwrap__background02__funclist">
+                        <span><img src="img/plus-color.svg" alt="プラスアイコン"></span>
+                        新規テーブル作成
+                    </a>
+                </div>
+                <div class="tablelist__content__listwrap__background02">
+                    <a href="#" class="tablelist__content__listwrap__background02__funclist">
+                        <span><img src="img/plus-color.svg" alt="プラスアイコン"></span>
+                        新規機能をつくる
+                    </a>
+                </div>
+            </div>
+            <div class="tablelist__content__selectwrap">
+                <h2 class="tablelist__content__selectwrap__heading">テーブルA</h2>
+                <p class="tablelist__content__selectwrap__name">データベースA</p>
+                <a href="make-func.html" class="tablelist__content__selectwrap__edit">テーブルを編集する
+                    <span><img src="img/triangle-color.svg" alt="色付き三角形"></span>
+                </a>
+                <div class="tablelist__content__selectwrap__border"></div>
+                <div class="tablelist__content__selectwrap__area"></div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/nav.js"></script>
+</body>
+</html>

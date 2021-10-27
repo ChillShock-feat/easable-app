@@ -97,8 +97,6 @@ abbr[title] {
 }
 
 a {
-  color:#fff;
-  text-decoration: none;
   background-color: transparent;
   /* Remove the gray background on active links in IE 10 */
   -webkit-text-decoration-skip: objects;
@@ -464,7 +462,6 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .nav__project__serverlist__server__active, .nav__project__serverlist__newserver__active {
@@ -493,146 +490,89 @@ body {
   display: flex;
 }
 
-.database {
+.newproject {
   width: 80vw;
   height: 100vh;
-  padding: 70px 40px 0 40px;
   margin-left: 20%;
-}
-
-.database__navarea {
+  margin-bottom: 100px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.database__navarea__nav {
-  width: 30vw;
-  display: flex;
-  justify-content: space-around;
-}
-
-.database__navarea__nav__link {
-  color: #26262666;
-  font-size: 1.6rem;
-  font-weight: 600;
+.newproject__box {
+  width: 700px;
+  border: solid 2px #dddddd66;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 16px 16px 0px #00000066;
+  margin: 0px auto;
+  position: relative;
   cursor: pointer;
-  padding-top: 10px;
-  margin-bottom: 15px;
-  border-bottom: solid 3px #26262600;
 }
 
-.database__navarea__nav__active {
-  color: #7ED22F;
-  padding-top: 10px;
-  border-bottom: solid 3px #7ED22F;
+.newproject__box__cross {
+  position: absolute;
+  top: 35px;
+  right: 37px;
 }
 
-.database__navarea__subnav {
-  display: flex;
+.newproject__box__circle {
+  width: 54px;
+  height: 54px;
+  background-color: #C4C4C4;
+  border-radius: 100%;
+  margin: 80px auto 30px;
 }
 
-.database__navarea__subnav__link {
-  color: #005662;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 0 10px;
-  padding-top: 2px;
-}
-
-.database__border-x {
-  border: solid 4px #2626260A;
-}
-
-.database__content {
-  display: none;
-}
-
-.database__content h1 {
+.newproject__box h1 {
   color: #005662;
   font-size: 2.4rem;
-  font-weight: 600;
-  margin-top: 40px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
-.database__content__servername {
+.newproject__box__word {
   color: #7ED22F;
   font-size: 1.2rem;
-  margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
-.database__content__tablewrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 60px;
+.newproject__box__projectdata {
+  width: 400px;
+  margin: 60px auto 0;
 }
 
-.database__content__tablewrap__tablelist {
-  width: 320px;
-  height: 320px;
+.newproject__box__projectdata__name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-decoration: none;
-  background: #7ED22F;
-  color: #FFF;
-  border-bottom: solid 10px #71BD29;
-  border-right: solid 10px #71BD29;
-  border-radius: 30px;
-  font-size: 1.8rem;
+  margin-top: 35px;
 }
 
-.database__content__tablewrap__tablelist img {
-  padding-left: 25px;
-}
-
-.database__content__tablewrap__background {
-  width: 230px;
-  height: 230px;
-  background-color: #71BD29;
-  border-radius: 30px;
-}
-
-.database__content__tablewrap__background__tablelist-small {
-  width: 220px;
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-decoration: none;
-  background: #fff;
-  color: #005662;
-  border: solid 8px #7ED22F;
-  border-radius: 30px;
+.newproject__box__projectdata__name label {
+  color: #C4C4C4;
   font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.database__content__tablewrap__background__tablelist-small img {
-  padding-left: 15px;
+.newproject__box__projectdata__name input {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  border: solid 2px #C4C4C4;
+  border-radius: 6px;
 }
 
-input[type='file']{
-  margin-top:50px;
-  font-size:19px;
-}
-
-.file_upload_button{
-  display: block;
-  background-color:#7ED22F;
-  margin-top: 20px;
-  padding:15px;
-  border-radius: 10px;
-  color:#fff;
-}
-
-.nav__project__serverlist__server  img {
-  position: absolute;
-  top:10px;
-  right: 0;
+.newproject__box__projectdata__submit {
+  width: 100%;
+  height: 65px;
+  background-color: #83DB31;
+  border-radius: 125px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 40px 0 115px;
 }

@@ -43,9 +43,9 @@ $data = $back_handle->getData($sql);
                             ?>
                                 <div class="nav__project__serverlist__server">
                                     <span></span>
-                                    <p>
-                                        <a href="https://easable.jp" target="_blank" rel="noopener noreferrer">
-                                            <?php echo $server_value['server_name']; ?>
+                                    <p class="server_link_container">
+                                        <a href="<?php echo $server_value['url'];?>" class="server_link" target="_blank" rel="noopener noreferrer">
+                                            <?php echo $server_value['server_name']; ?><img src="img/link.svg" alt="リンク">
                                         </a>
                                     </p>
                                 </div>
@@ -64,96 +64,6 @@ $data = $back_handle->getData($sql);
             <?php
             }
             ?>
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
-                    <p>プロジェクト1</p>
-                </div>
-                <form action="add_server.php" method='GET'>
-                    <div class="nav__project__serverlist show-list">
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー1</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー2</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー3</p>
-                        </div>
-                        <div class="nav__project__serverlist__newserver">
-                            <button>
-                                <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                                &nbsp;新規サーバー作成
-                            </button>
-                        </div>
-                        <input name='project_id' value='1' hidden />
-                </form>
-            </section>
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
-                    <p>プロジェクト2</p>
-                </div>
-                <form action="add_server.php" method='GET'>
-                    <div class="nav__project__serverlist show-list">
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー1</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー2</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー3</p>
-                        </div>
-                        <div class="nav__project__serverlist__newserver">
-                            <button>
-                                <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                                &nbsp;新規サーバー作成
-                            </button>
-                        </div>
-                        <input name='project_id' value='2' hidden />
-                </form>
-            </section>
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff" />
-                    </svg>
-                    <p>プロジェクト3</p>
-                </div>
-                <form action="add_server.php" method='GET'>
-                    <div class="nav__project__serverlist show-list">
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー1</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー2</p>
-                        </div>
-                        <div class="nav__project__serverlist__server">
-                            <span></span>
-                            <p>サーバー3</p>
-                        </div>
-                        <div class="nav__project__serverlist__newserver">
-                            <button>
-                                <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                                &nbsp;新規サーバー作成
-                            </button>
-                        </div>
-                        <input name='project_id' value='3' hidden />
-                </form>
-            </section>
         </nav>
         <main class="database">
             <section class="database__navarea">
@@ -191,10 +101,14 @@ $data = $back_handle->getData($sql);
                 </div>
             </section>
             <section class="database__content show-content">
-                <h2>ファイルアップロード</h2>
+                <h1>ファイルアップロード</h1>
+                <form action="https://back.easable.jp/easable-back/app/controller/file_upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="*">
+                    <input type="submit" class='file_upload_button' value="ファイルアップロード">
+                </form>
             </section>
             <section class="database__content show-content">
-                <h2>サーバー詳細</h2>
+                <h1>サーバー詳細</h1>
             </section>
         </main>
     </div>

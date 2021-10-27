@@ -14,8 +14,8 @@ setcookie('project_id',$_GET['project_id']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>easable - サーバー追加</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/add-project.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="css/add-style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -66,98 +66,6 @@ setcookie('project_id',$_GET['project_id']);
             }
             ?>
             <!-- easable-back から project と projectに含まれるID を取得 -->
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
-                    </svg>    
-                    <p>プロジェクト1</p>
-                </div>
-                <form action="" method='GET'>
-                <div class="nav__project__serverlist show-list">
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー1</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー2</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー3</p>
-                    </div>
-                    <div class="nav__project__serverlist__newserver">
-                        <button>
-                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成
-                        </button>
-                    </div>
-                    <input name='project_id' value='1' hidden/>
-                </form>
-                </div>
-            </section>
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
-                    </svg>    
-                    <p>プロジェクト2</p>
-                </div>
-                <form action="" method='GET'>
-                <div class="nav__project__serverlist show-list">
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー1</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー2</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー3</p>
-                    </div>
-                    <div class="nav__project__serverlist__newserver">
-                        <button>
-                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成
-                        </button>
-                    </div>
-                    <input name='project_id' value='2' hidden/>
-                </form>
-            </section>
-            <section class="nav__project">
-                <div class="nav__project__box nav-toggle">
-                    <svg class="nav__project__box__img rotate-triangle" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00219 5.82497L1.07318 0.425033L13.1937 0.728192L7.00219 5.82497Z" fill="#ffffff"/>
-                    </svg>    
-                    <p>プロジェクト3</p>
-                </div>
-                <form action="" method='GET'>
-                <div class="nav__project__serverlist show-list">
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー1</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー2</p>
-                    </div>
-                    <div class="nav__project__serverlist__server">
-                        <span></span>
-                        <p>サーバー3</p>
-                    </div>
-                    <div class="nav__project__serverlist__newserver">
-                        <button>
-                            <span><img src="img/plus.svg" alt="プラスアイコン"></span>
-                            &nbsp;新規サーバー作成
-                        </button>
-                    </div>
-                    <input name='project_id' value='3' hidden/>
-                </form>
-                </div>
-            </section>
         </nav>
         <main class="newproject">
             <div class="newproject__box">
